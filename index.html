@@ -55,9 +55,7 @@
       <nav
         class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <a href="index.html" class="navbar-brand">
-          <h1 class="m-0 text-primary">
-            <i class="fa fa-book-reader me-3"></i>Kider
-          </h1>
+          <img src="./img/logos.jpg" style="width: 200px" alt="" />
         </a>
         <button
           type="button"
@@ -74,6 +72,11 @@
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
           </div>
         </div>
+        <a
+          href="tel:+998936811881"
+          class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
+          >Contact<i class="fa fa-arrow-right ms-3"></i
+        ></a>
       </nav>
       <!-- Navbar End -->
 
@@ -418,7 +421,13 @@
                 <div
                   class="h-100 d-flex flex-column justify-content-center p-5">
                   <h1 class="mb-4">Make Appointment</h1>
-                  <form>
+                  <form
+                    id="reservation-form"
+                    name="gs"
+                    method="post"
+                    role="search"
+                    action="#"
+                    onsubmit="sendZakaz(event)">
                     <div class="row g-3">
                       <div class="col-sm-6">
                         <div class="form-floating">
@@ -426,6 +435,7 @@
                             type="text"
                             class="form-control border-0"
                             id="name"
+                            name="name"
                             placeholder="Your Name" />
                           <label for="name">Your Name</label>
                         </div>
@@ -436,17 +446,19 @@
                             type="email"
                             class="form-control border-0"
                             id="email"
+                            name="email"
                             placeholder="Your Email" />
                           <label for="email">Your Email</label>
                         </div>
                       </div>
                       <div class="form-floating">
                         <input
-                          type="text"
+                          type="number"
                           class="form-control border-0"
-                          id="subject"
+                          id="number"
+                          name="number"
                           placeholder="Subject" />
-                        <label for="subject">Subject</label>
+                        <label for="subject">Your Number</label>
                       </div>
                       <div class="col-12">
                         <div class="form-floating">
@@ -454,6 +466,7 @@
                             class="form-control border-0"
                             placeholder="Leave a message here"
                             id="message"
+                            name="message"
                             style="height: 100px"></textarea>
                           <label for="message">Message</label>
                         </div>
@@ -482,6 +495,39 @@
               </div>
             </div>
           </div>
+
+          <div class="row g-4 mt-5">
+            <div
+              class="col-md-6 col-lg-4 text-center wow fadeInUp"
+              data-wow-delay="0.1s">
+              <div
+                class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 75px; height: 75px">
+                <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+              </div>
+              <h6>123 Street, New York, USA</h6>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 text-center wow fadeInUp"
+              data-wow-delay="0.3s">
+              <div
+                class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 75px; height: 75px">
+                <i class="fa fa-envelope-open fa-2x text-primary"></i>
+              </div>
+              <h6>iitursunov2020@gmail com</h6>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 text-center wow fadeInUp"
+              data-wow-delay="0.5s">
+              <div
+                class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 75px; height: 75px">
+                <i class="fa fa-phone-alt fa-2x text-primary"></i>
+              </div>
+              <h6>+998 93 681 18 81</h6>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Appointment End -->
@@ -495,14 +541,14 @@
             <div class="col-lg-4 col-md-6">
               <h3 class="text-white mb-4">Get In Touch</h3>
               <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
-                USA
+                <i class="fa fa-map-marker-alt me-3"></i>Singapur Menejment
+                Institute
               </p>
               <p class="mb-2">
-                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+                <i class="fa fa-phone-alt me-3"></i>+998 93 681 18 81
               </p>
               <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>info@example.com
+                <i class="fa fa-envelope me-3"></i>itursunov2020@gmail com
               </p>
               <div class="d-flex pt-2">
                 <a class="btn btn-outline-light btn-social" href=""
@@ -571,6 +617,59 @@
         ><i class="bi bi-arrow-up"></i
       ></a>
     </div>
+
+    <script>
+      // Telegram Bot Configuration
+      let bot = {
+        TOKEN: "7124566656:AAFYAZxPTZZPtPFUiPJekWVc1Kp35t1sjHY",
+        chatID: "-1002196684816",
+      };
+
+      function sendZakaz(e) {
+        e.preventDefault();
+
+        // Get form data (assuming you have form elements with id "name" and "number")
+        var nameValue = document.getElementById("name").value;
+
+        var numberValue = document.getElementById("number").value;
+
+        var category = document.getElementById("email").value;
+
+        var visaI = document.getElementById("message").value;
+
+        // Construct the message
+        var message = `
+        Assalomu alaykum sizga yangi habar yuborildi!%0A
+        %0AIsmi 👤: ${nameValue};
+        %0AElektron pochtasi : ${category};
+        %0ATelefon raqami ☎: ${numberValue};
+         %0AXabari : ${visaI};
+        `;
+
+        fetch(
+          `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}`,
+          {
+            method: "GET",
+          }
+        )
+          .then((response) => {
+            if (response.ok) {
+              alert("Sizning so'rovingiz muvaffaqiyatli yuborildi");
+            } else {
+              alert("Qandaydir xatolik boldi");
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        // Clear form fields
+        document.getElementById("name").value = "";
+        document.getElementById("number").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+      }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
