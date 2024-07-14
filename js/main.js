@@ -64,11 +64,34 @@
     ],
     responsive: {
       0: {
-        items: 1,
+        items: 2,
       },
       992: {
         items: 4,
       },
     },
   });
+
+  // Testimonials carousel
+  $(".testimonial-carousels").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    margin: 24,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: [
+      '<i class="bi bi-arrow-left"></i>',
+      '<i class="bi bi-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
 })(jQuery);
+
