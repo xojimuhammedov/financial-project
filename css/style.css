@@ -13,15 +13,24 @@
   z-index: 99;
 }
 
-.blog-lists {
+.blog-lists,
+.video-lists {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 400px));
   gap: 20px;
   flex-wrap: wrap;
 }
 
+
 .blog-list {
-  height: 480px !important;
+  height: 440px !important;
+  background-color: #fff5f3 !important;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.video-list {
+  height: 330px !important;
   background-color: #fff5f3 !important;
   border-radius: 10px;
   padding: 1rem;
@@ -39,6 +48,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  margin-top: 10px;
 }
 
 .blog-list p {
@@ -525,4 +535,17 @@ h6,
   margin-right: 0;
   padding-right: 0;
   border-right: none;
+}
+
+@media (max-width: 500px) {
+  .blog-lists, .video-lists {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 400px));
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .mission-list {
+    padding: 10px !important;
+  }
 }
