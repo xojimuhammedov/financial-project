@@ -1,865 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Al-Muamalat</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Al-Muamalat</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
-      rel="stylesheet" />
+  <!-- Favicon -->
+  <link href="./logo.jpg" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div
-          class="spinner-border text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status">
-          <span class="sr-only">Loading...</span>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-xxl bg-white p-0">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+      <a href="index.html" class="navbar-brand">
+        <img src="./logo123.jpg" style="width: 200px" alt="" />
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
+          <a href="index.html" class="nav-item nav-link">Biz haqimizda</a>
+          <a href="index.html" class="nav-item nav-link">Xizmatlar</a>
+          <a href="materials.html" class="nav-item nav-link">Islom moliyasi</a>
+          <a href="contacts.html" class="nav-item nav-link">Biz bilan bog'lanish</a>
+
+          <a style="margin-left: 65px" href="uz.html" class="nav-item nav-link nav-language">EN</a>
+          <a style="margin-right: 25px" href="index.html" class="nav-item nav-link active">UZ</a>
         </div>
       </div>
-      <!-- Spinner End -->
+      <a href="contacts.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Aloqa<i
+          class="fa fa-arrow-right ms-3"></i></a>
+    </nav>
+    <!-- Navbar End -->
 
-      <!-- Navbar Start -->
-      <nav
-        class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-        <a href="index.html" class="navbar-brand">
-          <img src="./img/logos.jpg" style="width: 200px" alt="" />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav mx-auto">
-            <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
-            <a href="index.html" class="nav-item nav-link">Biz haqimizda</a>
-            <a href="index.html" class="nav-item nav-link">Xizmatlar</a>
-            <a href="materials.html" class="nav-item nav-link"
-              >Islom moliyasi</a
-            >
-            <a href="contacts.html" class="nav-item nav-link"
-              >Biz bilan bog'lanish</a
-            >
-
-            <a
-              style="margin-left: 65px"
-              href="uz.html"
-              class="nav-item nav-link nav-language"
-              >EN</a
-            >
-            <a
-              style="margin-right: 25px"
-              href="index.html"
-              class="nav-item nav-link active"
-              >UZ</a
-            >
+    <div class="container">
+      <h5 class="mb-3 mt-5">"ISLOM MOLIYASI”</h5>
+      <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            IJARA
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            Mushoraka
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            Murobaha
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-1" data-bs-toggle="pill" data-bs-target="#pills-contact-1"
+            type="button" role="tab" aria-controls="pills-contact-1" aria-selected="false">
+            Muzoraba
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-2" data-bs-toggle="pill" data-bs-target="#pills-contact-2"
+            type="button" role="tab" aria-controls="pills-contact-2" aria-selected="false">
+            Salam
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-3" data-bs-toggle="pill" data-bs-target="#pills-contact-3"
+            type="button" role="tab" aria-controls="pills-contact-3" aria-selected="false">
+            Istisna
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-4" data-bs-toggle="pill" data-bs-target="#pills-contact-4"
+            type="button" role="tab" aria-controls="pills-contact-4" aria-selected="false">
+            Parallel Salam
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-5" data-bs-toggle="pill" data-bs-target="#pills-contact-5"
+            type="button" role="tab" aria-controls="pills-contact-5" aria-selected="false">
+            Parallel Istisna
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-6" data-bs-toggle="pill" data-bs-target="#pills-contact-6"
+            type="button" role="tab" aria-controls="pills-contact-6" aria-selected="false">
+            Mushoraka Mutanaqisa
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-7" data-bs-toggle="pill" data-bs-target="#pills-contact-7"
+            type="button" role="tab" aria-controls="pills-contact-7" aria-selected="false">
+            Vakala (Wakalah)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-8" data-bs-toggle="pill" data-bs-target="#pills-contact-8"
+            type="button" role="tab" aria-controls="pills-contact-8" aria-selected="false">
+            Ujra (ish/xizmat haqi)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab-9" data-bs-toggle="pill" data-bs-target="#pills-contact-9"
+            type="button" role="tab" aria-controls="pills-contact-9" aria-selected="false">
+            Shariatga muvofiqlik
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane card fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div>
+            <p class="p-3">
+              <b>Ijara</b> - bu Islom moliyasida ijaraga shartnomasi bo'lib, unda bir tomon (ijaraga beruvchi) boshqa
+              tomonga (ijaraga oluvchi) ma'lum muddatga oldindan belgilangan ijara to'lovlari evaziga aktivni ijaraga
+              beradi. Aktivga egalik ijaraga beruvchida qoladi, ijaraga oluvchi esa aktivdan foydalanish huquqiga ega
+              bo'ladi.
+            </p>
+            <p class="px-5">
+              • Ijaraga beruvchi aktivga egalik qilishi va uni ijaraga berishdan oldin o'z tasarrufida bo'lishi kerak.
+              Aktiv shartnoma shartlariga muvofiq foydalanish uchun yaroqli holatda bo'lishi kerak.
+            </p>
+            <p class="px-5">
+              • Shartnoma ijara muddati, ijara to'lovi miqdori, to'lov jadvali va ikki tomonning majburiyatlarini
+              belgilashi kerak.
+            </p>
+            <p class="px-5">
+              • Aktivdan foydalanish shariat qonunlariga ko'ra ruxsat etilgan (Halol) maqsadlarda bo'lishi kerak. Harom
+              faoliyatlarga (masalan, qimor, alkogol) bog'liq foydalanish taqiqlanadi.
+            </p>
+            <p class="px-5">
+              • Ijaraga beruvchi aktivning mulkdori bo'lib qoladi va mulkchilik bilan bog'liq asosiy texnik xizmat va
+              xavflarni (masalan, sug'urta va soliqlar) o'z zimmasiga oladi.
+            </p>
+            <p class="px-5">
+              • Ijaraga oluvchi esa kundalik texnik xizmat va operatsion xarajatlarni o'z zimmasiga oladi.
+            </p>
+            <p class="px-5">
+              • Ikkala tomon ham Ijara shartnomasini barcha shartlarni tushungan holda va o'zaro rozilik asosida tuzishi
+              kerak.
+            </p>
+            <p class="px-5">
+              • Ijara to'lovi ikki tomon tomonidan kelishilgan bo'lishi kerak va adolatli va haqqoniy bo'lishi kerak. U
+              belgilangan yoki o'zgaruvchan bo'lishi mumkin, shartnomaga bog'liq holda.
+            </p>
+            <p class="px-5">
+              • Ijara muddati tugagandan so'ng, aktiv shartnomada belgilangan holatda, normal eskirishni hisobga olgan
+              holda, ijaraga beruvchiga qaytarilishi kerak.
+            </p>
+            <p class="px-5">
+              • Shartnoma, har qanday tomon tomonidan ijara shartnomasini bekor qilish shartlari va majburiyatni buzish
+              oqibatlarini belgilashi kerak.
+            </p>
+            <p class="px-5">
+              • Ijara shartnomasini hujjatlashtirish nizolarni oldini olishga yordam beradi va kelishilgan shartlarning
+              aniq qayd etish maqsadga muvofiq.
+            </p>
           </div>
         </div>
-        <a
-          href="contacts.html"
-          class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
-          >Aloqa<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </nav>
-      <!-- Navbar End -->
-
-      <div class="container">
-        <h5 class="mb-3 mt-5">"ISLOM MOLIYASI”</h5>
-        <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true">
-              IJARA
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false">
-              Mushoraka
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false">
-              Murobaha
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-1"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-1"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-1"
-              aria-selected="false">
-              Muzoraba
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-2"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-2"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-2"
-              aria-selected="false">
-              Salam
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-3"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-3"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-3"
-              aria-selected="false">
-              Istisna
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-4"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-4"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-4"
-              aria-selected="false">
-              Parallel Salam
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-5"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-5"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-5"
-              aria-selected="false">
-              Parallel Istisna
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-6"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-6"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-6"
-              aria-selected="false">
-              Mushoraka Mutanaqisa
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-7"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-7"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-7"
-              aria-selected="false">
-              Vakala (Wakalah)
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-8"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-8"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-8"
-              aria-selected="false">
-              Ujra (ish/xizmat haqi)
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab-9"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact-9"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact-9"
-              aria-selected="false">
-              Shariatga muvofiqlik  
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane card fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab">
-            <div>
-              <p class="p-3">
-                <b>Ijara</b> - bu Islom moliyasida ijaraga shartnomasi bo'lib, unda bir tomon (ijaraga beruvchi) boshqa tomonga (ijaraga oluvchi) ma'lum muddatga oldindan belgilangan ijara to'lovlari evaziga aktivni ijaraga beradi. Aktivga egalik ijaraga beruvchida qoladi, ijaraga oluvchi esa aktivdan foydalanish huquqiga ega bo'ladi.
-              </p>
-              <p class="px-5">
-                •	Ijaraga beruvchi aktivga egalik qilishi va uni ijaraga berishdan oldin o'z tasarrufida bo'lishi kerak. Aktiv shartnoma shartlariga muvofiq foydalanish uchun yaroqli holatda bo'lishi kerak.
-              </p>
-              <p class="px-5">
-                •	Shartnoma ijara muddati, ijara to'lovi miqdori, to'lov jadvali va ikki tomonning majburiyatlarini belgilashi kerak.
-              </p>
-              <p class="px-5">
-                •	Aktivdan foydalanish shariat qonunlariga ko'ra ruxsat etilgan (Halol) maqsadlarda bo'lishi kerak. Harom faoliyatlarga (masalan, qimor, alkogol) bog'liq foydalanish taqiqlanadi.
-              </p>
-              <p class="px-5">
-                •	Ijaraga beruvchi aktivning mulkdori bo'lib qoladi va mulkchilik bilan bog'liq asosiy texnik xizmat va xavflarni (masalan, sug'urta va soliqlar) o'z zimmasiga oladi.
-              </p>
-              <p class="px-5">
-                •	Ijaraga oluvchi esa kundalik texnik xizmat va operatsion xarajatlarni o'z zimmasiga oladi.
-              </p>
-              <p class="px-5">
-                •	Ikkala tomon ham Ijara shartnomasini barcha shartlarni tushungan holda va o'zaro rozilik asosida tuzishi kerak.
-              </p>
-              <p class="px-5">
-                •	Ijara to'lovi ikki tomon tomonidan kelishilgan bo'lishi kerak va adolatli va haqqoniy bo'lishi kerak. U belgilangan yoki o'zgaruvchan bo'lishi mumkin, shartnomaga bog'liq holda.
-              </p>
-              <p class="px-5">
-                •	Ijara muddati tugagandan so'ng, aktiv shartnomada belgilangan holatda, normal eskirishni hisobga olgan holda, ijaraga beruvchiga qaytarilishi kerak.
-              </p>
-              <p class="px-5">
-                •	Shartnoma, har qanday tomon tomonidan ijara shartnomasini bekor qilish shartlari va majburiyatni buzish oqibatlarini belgilashi kerak.
-              </p>
-              <p class="px-5">
-                •	Ijara shartnomasini hujjatlashtirish nizolarni oldini olishga yordam beradi va kelishilgan shartlarning aniq qayd etish maqsadga muvofiq.
-              </p>
-            </div>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab">
-            <p class="p-3">
-              <b>Mushoraka</b> - bu Islom moliyasida barcha sheriklar kapital kiritib, oldindan kelishilgan nisbatlarda foyda va ulushlariga ko’ra zararni bo'lishadigan qo'shma korxona yoki sheriklik shartnomasi. U o'zaro rozilik va hamkorlikka asoslanadi.
-            </p>
-            <p class="px-5">
-              •	Barcha sheriklar sheriklikka kapital kiritishi kerak. Kapital naqd pul, aktivlar yoki boshqa moddiy hissalar shaklida bo'lishi mumkin.
-            </p>
-            <p class="px-5">
-              •	Har bir sherik tomonidan kiritilgan kapital miqdori va shakli aniq belgilanishi va kelishilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Foyda oldindan kelishilgan nisbatlarda sheriklar o'rtasida bo'linadi, bu nisbatlar ularning kapital hissalariga mos kelishi shart emas.
-            </p>
-            <p class="px-5">
-              •	Zarar har bir sherikning kapital hissasiga mutanosib ravishda bo'linadi. 
-            </p>
-            <p class="px-5">
-              •	Barcha sheriklar Mushoraka shartnomasiga ixtiyoriy ravishda va shartlarni to'liq tushungan holda kirishishi kerak.
-            </p>
-            <p class="px-5">
-              •	Sheriklikni boshqarish barcha sheriklar tomonidan birgalikda yoki bir yoki bir nechta sheriklarga topshirilishi mumkin. Vazifalar va majburiyatlar aniq belgilanishi kerak.
-            </p>
-            <p class="px-5">
-              •	Qaror qabul qilish o'zaro maslahat va kelishuv asosida amalga oshirilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Sheriklik tomonidan amalga oshiriladigan barcha faoliyatlar va investitsiyalar Shariat tamoyillariga mos bo'lishi, Ribo (foiz), G’arar (ortiqcha noaniqlik) va Maysar (qimor) kabi harom faoliyatlar bo’lmasligi zarur.
-            </p>
-            <p class="px-5">
-              •	Mushoraka shartnomasi hujjatlashtirilishi kerak, sheriklik shartlari, kapital kiritish, foyda va zararlarni bo'lishish nisbatlari, boshqaruv majburiyatlari va nizolarni hal qilish tartiblarini belgilashi kerak.
-            </p>
-            <p class="px-5">
-              •	Sheriklik shartnomada belgilangan shartlar asosida, masalan, o'zaro rozilik, sheriklik maqsadlariga erishish yoki shartnoma buzilishi kabi hollarda tugatilishi mumkin.
-            </p>
-            <p class="px-5">
-              •	Tugatilgandan so'ng, qolgan aktivlar va majburiyatlar kelishilgan shartlarga muvofiq taqsimlanishi kerak.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab">
-            <p class="p-3">
-              <b>Murobaha</b> bu Islom moliyasigi shartnoma bo'lib, unda sotuvchi aktivning narxi va foyda marjasini xaridorga ochiq-oydin oshkor qiladi. Bu shartnoma aktivlarni moliyalash uchun keng qo'llaniladi, bunda bank aktivni sotib olib, mijozga oldindan kelishilgan foyda marjasi bilan sotadi.
-            </p>
-            <p class="px-5">
-              •	Sotuvchi (odatda Islomiy bank) aktivning tannarxini va foyda marjasini xaridorga to'liq oshkor qilishi kerak. Bu shaffoflik ikkala tomon ham moliyaviy tafsilotlardan xabardor bo'lishini ta'minlaydi.
-            </p>
-            <p class="px-5">
-              •	Foyda marjasi aniq ko'rsatilishi va savdo amalga oshirilishidan oldin ikkala tomon tomonidan kelishilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Sotuvchi aktivni sotib olishdan oldin unga egalik qilishi va tasarrufida bo'lishi kerak. Bu sotuvchining aktivni sotish huquqiga ega ekanligini va bitimning haqiqiyligini ta'minlaydi.
-            </p>
-            <p class="px-5">
-              •	Sotuvchi aktivni xaridorga sotmaguncha xavf va majburiyatni o'z zimmasiga oladi. Bu davrda har qanday zarar yoki yo'qotishlar uchun javobgarlik sotuvchiga tegishli.
-            </p>
-            <p class="px-5">
-              •	Sotiladigan aktiv shariat qonunlariga ko'ra ruxsat etilgan (halol) bo'lishi kerak. Bu alkogol, qimor yoki cho'chqa mahsulotlari kabi harom faoliyatlarga bog'liq bo'lmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Murabaha kelishuvi yozma shartnoma shaklida hujjatlashtirilishi kerak, unda shartlar va sharoitlar, tannarx, foyda marjasi, to'lov jadvali va boshqa tegishli tafsilotlar ko'rsatilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Ikkala tomon ham shartnomaga xohish bilan va shartlarni to'liq tushungan holda kirishishi kerak. Rozilik majburlikdan holi bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Mijoz bankdan aktivni sotib olish uchun vada (Wa'ad) berishi mumkin. Bu vada mijozning majburiyatini ta'minlash uchun majburiy hisoblanadi.
-            </p>
-            <p class="px-5">
-              •	Ko'pincha Murobaha shartnomalarida xaridorga belgilangan muddat davomida kelishilgan narxni qismlarga bo'lib to'lashga ruxsat beriladi. To'lov jadvali va miqdorlari aniq belgilanishi va kelishilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Sotuvchi kechiktirilgan to'lovlar uchun qo'shimcha to'lovlar yoki foizlarni undira olmaydi. Kechiktirilgan to'lovlar uchun har qanday jarimalar shariat tamoyillariga mos bo'lishi va adolatli va asosli bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Bank mijozdan aktivni sotib olish majburiyatini ta'minlash uchun xavfsizlik garovi (Hamish Jiddiyah) so'rashi mumkin. Ushbu garov odatda qaytariladigan yoki bitim amalga oshirilsa, sotib olish narxiga qo'llanilishi mumkin.
-            </p>
-            <p class="px-5">
-              •	Garov miqdori va shartlari adolatli va aniq belgilangan bo'lishi kerak, shaffoflik va o'zaro kelishuvni ta'minlash uchun.
-            </p>
-            <p class="px-5">
-              •	Foyda marjasi adolatli va bozor sharoitlari va sotuvchining qabul qilgan xavfiga muvofiq bo'lishi kerak. Ekspluatatsion narx belgilash amaliyoti ruxsat etilmaydi.
-            </p>
-            <p class="px-5">
-              •	Taqdim etilgan barcha ma'lumotlar to'g'ri va haqqoniy bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Murobaha shartnomasidan kelib chiqqan har qanday nizolar o'zaro kelishuv yoki shariatga muvofiq arbitraj orqali hal qilinishi kerak. Shartnoma nizolarni hal qilish jarayonini belgilashi kerak.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-1"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-1">
-            <p class="p-3">
-              <b>Muzoraba</b> bu Islom moliyasi shartnoma bo'lib, unda bir tomon (Rabb-ul-Mol) kapital kiritadi, ikkinchi tomon (Mudorib) esa ushbu kapitalni boshqaradi va investitsiya qiladi. Foyda oldindan kelishilgan nisbatlarda bo'linadi, zarar esa faqat kapital egasiga tegishli, agar zarar Mudoribning ehtiyotsizligi yoki noto'g'ri boshqaruvi natijasida kelib chiqqan bo'lsa, Mudorib javobgar bo’ladi.
-            </p>
-            <p class="px-5">
-              •	Rabb-ul-Mol kapital (sarmoya) kiritadi, bu naqd pul yoki aktivlar shaklida bo'lishi mumkin.
-            </p>
-            <p class="px-5">
-              •	Mudorib kapitalni boshqaradi va investitsiyalarni amalga oshiradi. U o'z bilim va tajribasini investitsiyalarni boshqarishga qo'llaydi.
-            </p>
-            <p class="px-5">
-              •	Foyda oldindan kelishilgan nisbatlarda bo'linadi, bu nisbatlar shartnomada aniq ko'rsatilgan bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Agar zarar bo'lsa, bu faqat Rabb-ul-Molga tegishli bo'ladi, agar zarar Mudaribning ehtiyotsizligi yoki noto'g'ri boshqaruvi natijasida kelib chiqmagan bo'lsa.
-            </p>
-            <p class="px-5">
-              •	Mudoraba shartnomasida garov talab qilinishi mumkin, lekin bu faqat Mudoribning noto'g'ri boshqaruvi yoki ehtiyotsizligi natijasida kelib chiqishi mumkin bo'lgan yo'qotishlarni qoplash uchun bo'lishi kerak. Bu garov kapitalni himoya qilish maqsadida qo'yiladi, lekin u asosiy biznes risklarini kafolatlamaydi.
-            </p>
-            <p class="px-5">
-              •	<b>Cheklangan Muzoraba (Restricted Mudarabah):</b> Rabb-ul-Mol Mudoribga investitsiyalarni faqat aniq bir loyihalar yoki sohalarga kiritishni talab qilishi mumkin.
-            </p>
-            <p class="px-5">
-              •	<b>Cheklanmagan Muzoraba (Unrestricted Mudarabah):</b> Mudorib kapitalni o'z xohishiga ko'ra har qanday Shariatga muvofiq investitsiyalarga kiritishi mumkin.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-2"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-2">
-            <p class="p-3">
-              <b>Salam</b> - bu Islom moliyasi shartnomasi bo'lib, unda xaridor to'lovni oldindan to'laydi va sotuvchi kelajakda mahsulotlarni yetkazib beradi. Bu turdagi shartnoma ko'pincha qishloq xo'jaligi mahsulotlari va boshqa tovarlar uchun qo'llaniladi.
-            </p>
-            <p class="px-5">
-              •	Tovarning to'liq narxi shartnoma tuzilgan vaqtda to'lanishi kerak. Bu oldindan to'lov Salamni boshqa shartnomalardan ajratib turadi.
-            </p>
-            <p class="px-5">
-              •	Yetkazib beriladigan tovarlar sifat, miqdor va xususiyatlari bo'yicha aniq ta'riflanishi kerak. 
-            </p>
-            <p class="px-5">
-              •	Yetkazib berish sanasi shartnomada belgilanishi va aniqlangan bo'lishi kerak. Bu ikkala tomon ham tovarlar qachon yetkazib berilishini bilishini ta'minlaydi.
-            </p>
-            <p class="px-5">
-              •	Tovarlar aniq va o'lchanadigan bo'lishi kerak. Noaniq narsa bo'lmasligi kerak. Tovarlar Shariatga muvofiq bo'lishi kerak. 
-            </p>
-            <p class="px-5">
-              •	Sotuvchi shartnoma tuzilgan vaqtda tovarlarga ega bo'lishi shart emas, lekin belgilangan sanada ularni yetkazib berishni ta'minlashi kerak.
-            </p>
-            <p class="px-5">
-              •	Ikkala tomon ham Salam shartnomasiga ixtiyoriy ravishda kirishishi kerak va barcha shartlar va holatlarni tushunishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu oldindan to'lov va kelajakdagi yetkazib berish talabini o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Tovarlar yetkazib berilgunga qadar sotuvchi javobgar bo'ladi. Agar tovarlar zarar ko'rsa yoki belgilangan vaqtda yetkazib berilmasa, sotuvchi har qanday yo'qotish uchun javobgar bo'ladi.
-            </p>
-            <p class="px-5">
-              •	Agar sotuvchi belgilangan tovarlarni yetkazib bermasa, xaridor oldindan to'lovni qaytarib olish yoki yetkazib berishni talab qilish huquqiga ega. 
-            </p>
-            <p class="px-5">
-              •	Bitim shaffof bo'lishi va barcha shartlar aniq yozilgan bo'lishi uchun tegishli hujjatlar saqlanishi kerak. Bu to'lov kvitansiyalari va tovarlarning batafsil ta'rifini o'z ichiga oladi.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-3"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-3">
-            <p class="p-3">
-              <b>Istisna</b> - bu Islom moliyasi shartnomasi bo'lib, unda bir tomon (xaridor) ma'lum bir mol-mulkni ishlab chiqarishni yoki qurishni buyuradi va boshqa tomon (sotuvchi yoki ishlab chiqaruvchi) uni kelishilgan xususiyatlarga ko'ra ishlab chiqarishni o'z zimmasiga oladi. To'lov shartlari moslashuvchan bo'lib, to’lov buyurtma to'liq yetkazib berilganda yoki vaqt o'tishi bilan bo'lib-bo'lib to'lanishi mumkin.
-            </p>
-            <p class="px-5">
-              •	Istisna faqat ishlab chiqarish yoki qurilish talab qiladigan buyumlar uchun mo'ljallangan. Bu tayyor mahsulotlar uchun qo'llanilmaydi.
-            </p>
-            <p class="px-5">
-              •	Ishlab chiqariladigan tovarlarning spetsifikatsiyalari aniq belgilangan bo'lishi kerak, jumladan turi, sifati, miqdori va boshqa tegishli xususiyatlari. Bu har qanday noaniqlikning (g’arar) oldini oladi.
-            </p>
-            <p class="px-5">
-              •	Salamdan farqli o'laroq, Istisna shartnomasida to'lov buyurtma to'liq yetkazib berilganda, bo'lib-bo'lib yoki boshqa kelishilgan jadval bo'yicha amalga oshirilishi mumkin. Bu moslashuvchanlik uni boshqa savdo shartnomalaridan ajratib turadi.
-            </p>
-            <p class="px-5">
-              •	Shartnoma tuzilgan vaqtda tovarlar mavjud bo'lishi shart emas. Sotuvchi yoki ishlab chiqaruvchi shartnomaga ko'ra tovarlarni ishlab chiqarishi yoki qurishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma ishlab chiqaruvchi ishni boshlashidan oldin har ikki tomon tomonidan bekor qilinishi mumkin. Ishlab chiqarish boshlanganidan keyin, odatda, bekor qilish faqat o'zaro rozilik bilan amalga oshiriladi.
-            </p>
-            <p class="px-5">
-              •	Ikkala tomon ham Istisna shartnomasiga ixtiyoriy ravishda kirishishi kerak va barcha shartlar va holatlarni tushunishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu ishlab chiqarish va qurilish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Ishlab chiqaruvchi tovarlar kelishilgan spetsifikatsiyalarga muvofiq yetkazib berilgunga qadar javobgar bo'ladi. Agar tovarlar nuqsonli yoki kelishilgan spetsifikatsiyalarga mos kelmasa, xaridor ularni rad etish huquqiga ega.
-            </p>
-            <p class="px-5">
-              •	Agar ishlab chiqaruvchi belgilangan tovarlarni yetkazib bermasa, xaridor maxsus ijroni talab qilish, kompensatsiya olish yoki shartnomani bekor qilish kabi chora-tadbirlarni amalga oshirishi mumkin. 
-            </p>
-            <p class="px-5">
-              •	Bitim shaffof bo'lishi va barcha shartlar aniq yozilgan bo'lishi uchun tegishli hujjatlar saqlanishi kerak. Bu shartnoma, tovarlarning spetsifikatsiyalari, to'lov jadvali va boshqa tegishli tafsilotlarni o'z ichiga oladi.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-4"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-4">
-            <p class="p-3">
-              <b>Parallel Salam</b> — bu Islom moliyasida ikkita alohida Salam shartnomasi bir vaqtning o'zida tuziladigan shartnomadir. Birinchi shartnomada sotuvchi xaridorga kelajakda yetkazib beriladigan tovarlarni oldindan to'langan narxda yetkazib berishga rozi bo'ladi. 
-              Ikkinchi shartnomada birinchi shartnoma sotuvchisi yangi Salam shartnomasida xaridor bo'lib, kelajakda boshqa tomondan (ikkinchi sotuvchi) tovarlarni oldindan to'langan narxda yetkazib berishga rozi bo'ladi. 
-              Ushbu shartnomalar bir-biridan mustaqil bo'lib, ammo tranzaktsiyalar ketma-ketligi bilan bog'liq.
-            </p>
-            <p class="px-5">•	Har bir Salam shartnomasi mustaqil bo'lishi va bir-biriga bog'liq bo'lmasligi kerak. Bir shartnomaning majburiyatlari boshqa shartnomaga bog'liq bo'lmasligi kerak.</p>
-            <p class="px-5">
-              •	Ikkala Salam shartnomasida ham narx shartnoma tuzilgan paytda to'liq to'lanishi kerak. Ushbu oldindan to'lov Shariat qoidalariga muvofiq bo'lishi zarur.
-            </p>
-            <p class="px-5">
-              •	Ikkala shartnomadagi tovarlar sifat, miqdor va xususiyatlar bo'yicha aniq ta'riflangan bo'lishi kerak. Bu tovarlarga nisbatan har qanday noaniqlikning (g’arar) oldini oladi.
-            </p>
-            <p class="px-5">
-              •	Yetkazib berish sanalari ikkala shartnomada ham belgilanishi va aniqlangan bo'lishi kerak. Bu ikkala tomon ham tovarlar qachon yetkazib berilishini bilishini ta'minlaydi.
-            </p>
-            <p class="px-5">
-              •	Ikkala shartnomadagi tovarlar Shariatga muvofiq bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Birinchi Salam shartnomasidagi sotuvchi shartnoma tuzilgan paytda tovarlarga ega bo'lishi shart emas, lekin belgilangan sanada ularni yetkazib berishi kerak. Xuddi shunday, Parallel Salam shartnomasidagi ikkinchi sotuvchi ham shartnoma tuzilgan paytda tovarlarga ega bo'lishi shart emas, lekin belgilangan sanada ularni yetkazib berishi kerak.
-            </p>
-            <p class="px-5">
-              •	Har ikkala Salam shartnomasida ham tomonlar ixtiyoriy ravishda shartnomaga kirishi va barcha shartlar va holatlarni tushunishi kerak.
-            </p>
-            <p class="px-5">
-              •	Ikkala shartnoma ham amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu oldindan to'lov va kelajakdagi yetkazib berish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Har bir shartnomadagi sotuvchi tovarlarni kelishilgan spetsifikatsiyalarga muvofiq yetkazib bergunga qadar javobgar bo'ladi. Agar tovarlar zarar ko'rsa yoki belgilangan vaqtda yetkazib berilmasa, sotuvchi har qanday yo'qotish uchun javobgar bo'ladi.
-            </p>
-            <p class="px-5">
-              •	Agar har qanday sotuvchi belgilangan tovarlarni yetkazib bermasa, shu shartnomadagi xaridor oldindan to'lovni qaytarib olish yoki yetkazib berishni talab qilish huquqiga ega. 
-            </p>
-            <p class="px-5">
-              •	Har ikkala Salam shartnomasi uchun tegishli hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof bo'lib, barcha shartlar aniq yozilgan bo'lishi kerak. Bu to'lov kvitansiyalari va tovarlarning batafsil ta'rifini o'z ichiga oladi.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-5"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-5">
-            <p class="p-3">
-              <b>Parallel Istisna</b> — bu Islom moliyasida ikkita alohida Istisna shartnomasi bir vaqtning o'zida tuziladigan shartnomadir. Birinchi shartnomada xaridor ishlab chiqaruvchi yoki pudratchidan ma'lum bir mahsulot yoki loyihani ishlab chiqarishni yoki qurishni buyuradi. Ikkinchi shartnomada ishlab chiqaruvchi yoki pudratchi (birinchi shartnomada sotuvchi bo'lgan) subpudratchi yoki boshqa tomon bilan shunga o'xshash mahsulot yoki loyihani ishlab chiqarishni yoki qurishni buyuradi. Ushbu shartnomalar bir-biridan mustaqil bo'lib, tranzaktsiyalar ketma-ketligi bilan bog'liq.
-            </p>
-            <p class="px-5">
-              •	Har bir Istisna shartnomasi mustaqil bo'lishi va bir-biriga bog'liq bo'lmasligi kerak. Bir shartnomaning majburiyatlari boshqa shartnomaga bog'liq bo'lmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Ikkala shartnomadagi mahsulot yoki loyihalar sifat, miqdor va xususiyatlar bo'yicha aniq ta'riflangan bo'lishi kerak. Bu mahsulot yoki loyihalarga nisbatan har qanday noaniqlikning (g’arar) oldini oladi.
-            </p>
-            <p class="px-5">
-              •	Ikkala Istisna shartnomasida ham to'lov to'liq yetkazib berilganda, bo'lib-bo'lib yoki boshqa kelishilgan jadval bo'yicha amalga oshirilishi mumkin. Bu moslashuvchanlik uni boshqa savdo shartnomalaridan ajratib turadi.
-            </p>
-            <p class="px-5">
-              •	Mahsulot yoki loyihalar shartnoma tuzilgan paytda mavjud bo'lishi shart emas. Sotuvchi yoki pudratchi shartnomaga ko'ra mahsulot yoki loyihani ishlab chiqarishi yoki qurishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma ishlab chiqaruvchi yoki pudratchi ishni boshlashidan oldin har ikki tomon tomonidan bekor qilinishi mumkin. Ishlab chiqarish boshlanganidan keyin, odatda, bekor qilish faqat o'zaro rozilik bilan amalga oshiriladi.
-            </p>
-            <p class="px-5">
-              •	Har ikkala Istisna shartnomasida ham tomonlar ixtiyoriy ravishda shartnomaga kirishi va barcha shartlar va holatlarni tushunishi kerak.
-            </p>
-            <p class="px-5">
-              •	Ikkala shartnoma ham amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu ishlab chiqarish va qurilish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Har bir shartnomadagi ishlab chiqaruvchi yoki pudratchi mahsulot yoki loyihalar kelishilgan spetsifikatsiyalarga muvofiq yetkazib bergunga qadar javobgar bo'ladi. Agar mahsulot yoki loyihalar nuqsonli yoki kelishilgan spetsifikatsiyalarga mos kelmasa, xaridor ularni rad etish huquqiga ega.
-            </p>
-            <p class="px-5">
-              •	Agar har qanday ishlab chiqaruvchi yoki pudratchi belgilangan mahsulot yoki loyihalarni yetkazib bermasa, shu shartnomadagi xaridor maxsus ijroni talab qilish, kompensatsiya olish yoki shartnomani bekor qilish kabi chora-tadbirlarni amalga oshirishi mumkin. 
-            </p>
-            <p class="px-5">
-              •	Har ikkala Istisna shartnomasi uchun tegishli hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof bo'lib, barcha shartlar aniq yozilgan bo'lishi kerak. Bu shartnoma, mahsulot yoki loyihalarning spetsifikatsiyalari, to'lov jadvali va boshqa tegishli tafsilotlarni o'z ichiga oladi.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-6"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-6">
-            <p class="p-3">
-              <b>Mushoraka Mutanaqisa</b> (kamayib boruvchi sherikchilik) - Unda bir tomon (odatda moliyaviy institute, bank) o'z egaligidagi ulushini vaqt o'tishi bilan boshqa tomonga (shaxs yoki biznes) asta-sekin o'tkazadi. Bu odatda davriy to'lovlar orqali amalga oshiriladi, natijada ikkinchi tomon mulkning yagona egasiga aylanadi. Usbu sherikchilik shartnomasi uylar, transport vositalari yoki biznes uskunalarini sotib olishni moliyalashtirish uchun tez-tez qo'llaniladi.
-            </p>
-            <p class="px-5">
-              •	Ikkala tomon mulk sotib olish uchun kapital kiritadi. Mulk ulushlari kapital kiritishiga qarab taqsimlanadi.
-            </p>
-            <p class="px-5">
-              •	Moliyaviy institutning mulkdagi ulushi davriy to'lovlar orqali asta-sekin boshqa tomonga (mijozga) o'tkaziladi. Bu to'lovlar aktivdan foydalanish uchun ijara haqini va moliyaviy institut ulushining sotib olish narxini o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Aktivdan foydalanayotgan tomon moliyaviy institutga ulushini foydalanish uchun ijara to'laydi. Ularning ulushni sotib olgan sari ijara miqdori kamayadi.
-            </p>
-            <p class="px-5">
-              •	Har ikki tomon sheriklik va ijara kelishuvining shartlari va holatlarini aniq belgilab, ularga rozi bo'lishi kerak. Bu dastlabki kapital kiritishlar, mulkni o'tkazish usuli va jadvali, ijara miqdori va boshqa tegishli tafsilotlarni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Kelishuv ribo (foiz) taqiqlanishiga rioya qilishi kerak. Moliyaviy institutning foydasi ulushining ijarasi orqali olinadi, foiz orqali emas.
-            </p>
-            <p class="px-5">
-              •	Har ikki tomon Mushoraka Mutanaqisa shartnomasiga ixtiyoriy ravishda kirishi va barcha shartlar va holatlarni tushunishi kerak. Shartnoma Islom qonunlari va yurisdiktsiya talablariga mos kelishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma huquqiy jihatdan majburiy bo'lishi kerak, bu orqali har ikki tomon o'z majburiyatlariga rioya qilishini ta'minlaydi. Bu muntazam ijara va mulkni o'tkazish uchun to'lovlarni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Har ikki tomon mulkdagi ulushlariga qarab mulkka bog'liq xatarlarni bo'lishadi. 
-              Har qanday yo'qotish yoki zararni mulk ulushlari asosida proporsional ravishda bo'linadi.              
-            </p>
-            <p class="px-5">
-              •	Kelishuvda erta bekor qilish shartlari bo'lishi mumkin. Agar tomon kelishuvni erta bekor qilishga qaror qilsa, qolgan mulk ulushlarini hisoblash shartlari aniq belgilanishi kerak.
-            </p>
-            <p class="px-5">
-              •	Shartnoma, ijara kelishuvi, to'lov kvitansiyalari va mulkni o'tkazish yozuvlarini o'z ichiga olgan to'g'ri hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof va aniq bo'ladi.
-            </p>
-            <p class="px-3">
-              <b>Misol</b>
-            </p>
-            <p class="px-3">Mijoz 100,000 AQSh dollariga uy sotib olmoqchi. Mijoz va moliyaviy institut (masalan, bank) Mushoraka Mutanaqisa shartnomasiga kirishib, bank 80% ($80,000) va smijoz 20% ($20,000) kapital kiritadi. Shaxs moliyaviy institutning uydagi ulushidan foydalanish uchun ijara to'laydi va moliyaviy institut ulushini asta-sekin sotib olish uchun davriy to'lovlar qiladi. Vaqt o'tishi bilan shaxs ushbu to'lovlarni amalga oshirib, uydagi to'liq ulushni egallaydi.</p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-7"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-7">
-            <p class="p-3">
-              <b>Vakala</b> - bu Islom moliyasida shartnoma bo'lib, unda bir tomon (mijoz yoki "muwakkil") boshqa tomonni (vakil yoki "wakil") Shariatga muvofiq ruxsat etilgan masalalarda o'z nomidan ish yuritish uchun tayinlaydi. Vakil mijoz uchun muayyan vazifalar yoki funksiyalarni bajaradi, mijoz esa zarur mablag'lar yoki resurslarni ta'minlaydi. Vakil xizmatlari uchun haq olishi mumkin, bu belgilangan to'lov yoki tranzaktsiya qiymatining foizi bo'lishi mumkin.
-            </p>
-            <p class="px-5">
-              •	<b>Umumiy vakala (Wakalah 'Aammah):</b> Vakil mijoz nomidan turli tranzaktsiyalar yoki vazifalarni cheklanmagan vakolat bilan bajarishga haqli.
-            </p>
-            <p class="px-5">
-              •	<b>Maxsus vakala (Wakalah Khassa):</b> Vakil mijoz nomidan ma'lum vazifalarni yoki maxsus tranzaktsiyalarni bajarishga vakolat oladi, aniq belgilangan chegaralar va cheklovlar bilan.
-            </p>
-            <p class="px-5">
-              •	Ham mijoz, ham vakil Wakalah kelishuviga ixtiyoriy ravishda kirishishi kerak va har ikkisi shartlarni aniq tushunishi kerak.
-            </p>
-            <p class="px-5">
-              •	Vakilga berilgan vazifalar yoki tranzaktsiyalar Shariat qonunlariga muvofiq bo'lishi kerak. Vakildan harom (taqiqlangan) faoliyatlarni amalga oshirish talab qilinmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Vakilning majburiyatlari, vazifalari va vakolat doirasi shartnomada aniq belgilanishi kerak. Bu vakil xizmatlari uchun belgilangan har qanday kompensatsiyani ham o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Vakil halollik va maksimal harakat bilan mijoz manfaatlarini hisobga olib ish tutishi kerak. U manfaatlar to'qnashuvlaridan qochishi va mijozga har qanday tegishli ma'lumotlarni oshkor qilishi kerak.
-            </p>
-            <p class="px-5">
-              •	Vakil o'z harakatlari uchun hisob berishi kerak va mijozga aniq hisobotlar va yozuvlarni taqdim etishi kerak. U mijozning mablag'lari yoki resurslarini e'tibor va ehtiyotkorlik bilan boshqarishi kerak.
-            </p>
-            <p class="px-5">
-              •	Wakalah kelishuvi har ikki tomon tomonidan har qanday vaqtda bekor qilinishi mumkin, ogohlantirilgan holda va har qanday bajarilmagan majburiyatlar bajarilib.
-            </p>
-            <p class="px-5">
-              •	Shartnoma huquqiy jihatdan majburiy bo'lishi kerak, bu orqali har ikki tomon o'z majburiyatlariga rioya qilishini ta'minlaydi. Bu vakilning o'z vakolat doirasida ish tutish va mijozning zarur mablag'lar yoki resurslarni taqdim etish majburiyatini o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Mijoz vakilning Wakalah kelishuvi doirasida amalga oshirgan harakatlari uchun javobgar bo'ladi. Biroq, vakil o'z vakolat doirasidan tashqarida amalga oshirgan harakatlari yoki e'tiborsizlik yoki noto'g'ri harakatlar uchun shaxsan javobgar bo'ladi.
-            </p>
-            <p class="px-5">
-              •	Shartnoma, vakil tomonidan bajarilgan tranzaktsiyalar yoki vazifalar yozuvlari va vakilga to'langan har qanday kompensatsiyani o'z ichiga olgan to'g'ri hujjatlar saqlanishi kerak.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-8"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-8">
-            <p class="p-3">
-              <b>Ujra</b> - bu islomiy moliyada xizmatlar ko'rsatilganligi yoki mol-mulkdan foydalanish uchun to'lanadigan to'lov yoki komissiya. 
-            </p>
-            <p class="px-5">
-              •	Ujra to'lanadigan xizmat Islom qonunga ko'ra ruxsat etilgan bo'lishi kerak. Spirtli ichimliklar, qimor yoki foizga asoslangan tranzaksiyalar kabi harom (taqiqlangan) faoliyatlar bilan bog'liq bo'lgan hech qanday xizmat uchun Ujra olinishi mumkin emas.
-            </p>
-            <p class="px-5">
-              •	Xizmat ko'rsatuvchi (Ajir) va mijoz (Mustajir) o'rtasida xizmatning mohiyati va Ujraning miqdori bo'yicha aniq va o'zaro kelishuv bo'lishi kerak. 
-            </p>
-            <p class="px-5">
-              •	Ujraning miqdori va xizmat ko'lamini o'z ichiga olgan barcha shartlar va holatlar barcha ishtirokchilarga oshkora bo'lishi kerak, shunda hech qanday aldov yoki noaniqlik (g'arar) bo'lmaydi.
-            </p>
-            <p class="px-5">
-              •	Ujra uchun to'lov shartlari aniq belgilangan bo'lishi kerak. Bu birdaniga, bo'lib-bo'lib yoki boshqa o'zaro kelishilgan usulda bo'lishi mumkin, faqat bu aniq  bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Ujraning miqdori ko'rsatilgan xizmatlar yoki mol-mulkdan foydalanish qiymatini aks ettiruvchi adolatli va halol bo'lishi kerak. Bu ekspluatatsion yoki haddan tashqari bo'lmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Ujra odatda xizmat bajarilgandan keyin yoki shartnomada kelishilgan shartlarga binoan to'lanadi. Agar xizmat kelishilganidek ko'rsatilmasa, xizmat ko'rsatuvchi to'liq Ujrani olishga haqli bo'lmasligi mumkin.
-            </p>
-            <p class="px-5">
-              Vakala (Wakalah) shartnomasida agent (Wakil) asosiy tomon (mijoz) nomidan xizmat ko'rsatganligi uchun ujra olishi mumkin.
-            </p>
-            <p class="px-5">
-              Ijara shartnomasiga ko'ra, ijaraga beruvchi ijarachiga mulk yoki asbob-uskunalar kabi aktivlardan foydalanishga ruxsat bergani uchun Ujra oladi. 
-            </p>
-            <p class="px-5">
-              Islom banklari hisoblarga xizmat ko'rsatish, pul o'tkazmalari yoki maslahat xizmatlari kabi turli xizmatlar uchun ujra olishlari mumkin.
-            </p>
-          </div>
-          <div
-            class="tab-pane card fade"
-            id="pills-contact-9"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab-9">
-            <p class="p-3">
-              <b>Shariatga muvofiqlik</b> har qanday moliyaviy faoliyat, mahsulot yoki xizmatning Islom qonunlariga (Shariatga) muvofiqligini anglatadi. Shariatga muvofiqlik tranzaktsiyalar va operatsiyalarning Islom huquqiy manbalaridan kelib chiqqan axloqiy va huquqiy ko'rsatmalarga mosligini ta'minlaydi. Shariatga muvofiqlik foiz (ribo), qimor (maysir), ortiqcha noaniqlik (g’arar) va taqiqlangan sohalarga, masalan, alkogol, cho'chqa go'shti va axloqsizlikni o'z ichiga olgan ko'ngilochar sohalarga sarmoya kiritishni taqiqlaydi.
-            </p>
-            <p class="px-3">
-              <b>Shariatga muvofiqlikni tekshirish</b> sarmoyalar, kompaniyalar yoki moliyaviy mahsulotlarni Shariat qoidalariga muvofiqligini ta'minlash uchun baholash va filtrlash jarayonidir. Ushbu tekshirish jarayoni Shariat ko'rsatmalariga asoslangan ruxsat etilganlikni baholash uchun sifat va miqdoriy mezonlarni o'z ichiga oladi.
-            </p>
-            <p class="px-5">
-              •	Tranzaktsiyalar har qanday foiz shaklini o'z ichiga olmasligi kerak. Daromad ruxsat etilgan (halol) biznes faoliyatidan kelishi kerak.
-            </p>
-            <p class="px-5">
-              •	Tranzaktsiyalar ortiqcha noaniqlik va noaniqlikdan xoli bo'lishi kerak. Shartnomalar aniq va shaffof bo'lib, barcha shartlar va holatlar aniq belgilanishi kerak. 
-            </p>
-            <p class="px-5">
-              •	Qimor yoki spekulyativ harakatlarni o'z ichiga olgan faoliyatlar ruxsat etilmaydi. Sarmoyalar haqiqiy iqtisodiy faoliyatlarga asoslangan bo'lishi kerak.
-            </p>
-            <p class="px-5">
-              •	Sarmoyalar harom (taqiqlangan) faoliyatlarga, masalan, alkogol, cho'chqa go'shti, qimor va axloqsizlikni o'z ichiga olgan ko'ngilochar sohalarda ishtirok etuvchi kompaniyalarga qilinmasligi kerak.
-            </p>
-            
-            <h6 class="px-3">Shariatga moslikni tekshirish mezonlari</h6>
-            <p class="px-5">
-              <b>1.	Sifat mezonlari:</b>
-            </p>
-            <p class="px-3">Biznes faoliyatining tabiati baholanadi. Alkogol, cho'chqa go'shti, qimor, kattalar uchun ko'ngilochar xizmatlar va foizga asoslangan moliyaviy xizmatlar bilan shug'ullanuvchi kompaniyalar ro’yxatdan chiqariladi.</p>
-            <p class="px-5">
-              <b>2.	Miqdoriy mezonlari:</b>
-            </p>
-            <p class="px-3">Kompaniyalarning moliyaviy ko'rsatkichlari Shariatga mos kelishini ta'minlash uchun baholanadi. E’tibor qaratiladigan va ko’p ishlatiladigan moliyaviy ko'rsatkichlar quyidagilardan iborat:</p>
-            <p class="px-5">
-              •	Qarzdorlik va Bozor Kapitalizatsiyasi Nisbati: Kompaniyaning jami qarzlari uning bozor kapitalizatsiyasining 33% dan oshmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Nomaqbul Daromad Nisbati: Nomaqbul faoliyatlardan olingan daromad jami daromadning 5% dan oshmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Likvidlik Nisbati: Naqd pul va foiz keltiruvchi har qanday qimmatli qog’ozlarning jami aktivlarga nisbati 33% dan oshmasligi kerak.
-            </p>
-            <p class="px-5">
-              •	Foiz Keltiruvchi Qarzdorlikning Aktivlarga Nisbati: Foiz keltiruvchi qarzdorlik jami aktivlarning 33% dan oshmasligi kerak.
-            </p>
-            <p class="px-5">Kompaniyaning asosiy biznes faoliyati shariatga muvofiq bo'lishi kerak.</p>
-            <p class="px-5">Qarzning bozor qiymatiga nisbatan darajasi uchdan biridan kam bo'lishi kerak.</p>
-            <p class="px-5">Noto'g'ri faoliyatdan olingan daromadning foizini aniqlash va daromadni tozalash uchun tegishli miqdorni xayriyaga berish. </p>
-            <p class="px-5">
-              - Shariatga mos mahsulotlarni taklif qiladigan muassasalar Shariat kengashiga ega bo'lishi kerak, bu kengash malakali Islom olimlaridan iborat bo'lib, Shariat qoidalariga rioya qilinishini nazorat qiladi va ta'minlaydi.
-            </p>
-            <p class="px-5">
-              -	Shariatga rioya qilishni ta'minlash uchun muntazam Shariat auditlari o'tkazilishi kerak. Ushbu auditlar moliyaviy hisobotlar, tranzaktsiyalar va biznes amaliyotlarini ko'rib chiqadi.
-            </p>
-          </div>  
+        <div class="tab-pane card fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <p class="p-3">
+            <b>Mushoraka</b> - bu Islom moliyasida barcha sheriklar kapital kiritib, oldindan kelishilgan nisbatlarda
+            foyda va ulushlariga ko’ra zararni bo'lishadigan qo'shma korxona yoki sheriklik shartnomasi. U o'zaro
+            rozilik va hamkorlikka asoslanadi.
+          </p>
+          <p class="px-5">
+            • Barcha sheriklar sheriklikka kapital kiritishi kerak. Kapital naqd pul, aktivlar yoki boshqa moddiy
+            hissalar shaklida bo'lishi mumkin.
+          </p>
+          <p class="px-5">
+            • Har bir sherik tomonidan kiritilgan kapital miqdori va shakli aniq belgilanishi va kelishilishi kerak.
+          </p>
+          <p class="px-5">
+            • Foyda oldindan kelishilgan nisbatlarda sheriklar o'rtasida bo'linadi, bu nisbatlar ularning kapital
+            hissalariga mos kelishi shart emas.
+          </p>
+          <p class="px-5">
+            • Zarar har bir sherikning kapital hissasiga mutanosib ravishda bo'linadi.
+          </p>
+          <p class="px-5">
+            • Barcha sheriklar Mushoraka shartnomasiga ixtiyoriy ravishda va shartlarni to'liq tushungan holda
+            kirishishi kerak.
+          </p>
+          <p class="px-5">
+            • Sheriklikni boshqarish barcha sheriklar tomonidan birgalikda yoki bir yoki bir nechta sheriklarga
+            topshirilishi mumkin. Vazifalar va majburiyatlar aniq belgilanishi kerak.
+          </p>
+          <p class="px-5">
+            • Qaror qabul qilish o'zaro maslahat va kelishuv asosida amalga oshirilishi kerak.
+          </p>
+          <p class="px-5">
+            • Sheriklik tomonidan amalga oshiriladigan barcha faoliyatlar va investitsiyalar Shariat tamoyillariga mos
+            bo'lishi, Ribo (foiz), G’arar (ortiqcha noaniqlik) va Maysar (qimor) kabi harom faoliyatlar bo’lmasligi
+            zarur.
+          </p>
+          <p class="px-5">
+            • Mushoraka shartnomasi hujjatlashtirilishi kerak, sheriklik shartlari, kapital kiritish, foyda va
+            zararlarni bo'lishish nisbatlari, boshqaruv majburiyatlari va nizolarni hal qilish tartiblarini belgilashi
+            kerak.
+          </p>
+          <p class="px-5">
+            • Sheriklik shartnomada belgilangan shartlar asosida, masalan, o'zaro rozilik, sheriklik maqsadlariga
+            erishish yoki shartnoma buzilishi kabi hollarda tugatilishi mumkin.
+          </p>
+          <p class="px-5">
+            • Tugatilgandan so'ng, qolgan aktivlar va majburiyatlar kelishilgan shartlarga muvofiq taqsimlanishi kerak.
+          </p>
         </div>
-      </div>
-
-      <div class="container mt-4">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px">
-          <h1 class="mb-3">Bizning Videolar!</h1>
+        <div class="tab-pane card fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <p class="p-3">
+            <b>Murobaha</b> bu Islom moliyasigi shartnoma bo'lib, unda sotuvchi aktivning narxi va foyda marjasini
+            xaridorga ochiq-oydin oshkor qiladi. Bu shartnoma aktivlarni moliyalash uchun keng qo'llaniladi, bunda bank
+            aktivni sotib olib, mijozga oldindan kelishilgan foyda marjasi bilan sotadi.
+          </p>
+          <p class="px-5">
+            • Sotuvchi (odatda Islomiy bank) aktivning tannarxini va foyda marjasini xaridorga to'liq oshkor qilishi
+            kerak. Bu shaffoflik ikkala tomon ham moliyaviy tafsilotlardan xabardor bo'lishini ta'minlaydi.
+          </p>
+          <p class="px-5">
+            • Foyda marjasi aniq ko'rsatilishi va savdo amalga oshirilishidan oldin ikkala tomon tomonidan kelishilishi
+            kerak.
+          </p>
+          <p class="px-5">
+            • Sotuvchi aktivni sotib olishdan oldin unga egalik qilishi va tasarrufida bo'lishi kerak. Bu sotuvchining
+            aktivni sotish huquqiga ega ekanligini va bitimning haqiqiyligini ta'minlaydi.
+          </p>
+          <p class="px-5">
+            • Sotuvchi aktivni xaridorga sotmaguncha xavf va majburiyatni o'z zimmasiga oladi. Bu davrda har qanday
+            zarar yoki yo'qotishlar uchun javobgarlik sotuvchiga tegishli.
+          </p>
+          <p class="px-5">
+            • Sotiladigan aktiv shariat qonunlariga ko'ra ruxsat etilgan (halol) bo'lishi kerak. Bu alkogol, qimor yoki
+            cho'chqa mahsulotlari kabi harom faoliyatlarga bog'liq bo'lmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Murabaha kelishuvi yozma shartnoma shaklida hujjatlashtirilishi kerak, unda shartlar va sharoitlar,
+            tannarx, foyda marjasi, to'lov jadvali va boshqa tegishli tafsilotlar ko'rsatilishi kerak.
+          </p>
+          <p class="px-5">
+            • Ikkala tomon ham shartnomaga xohish bilan va shartlarni to'liq tushungan holda kirishishi kerak. Rozilik
+            majburlikdan holi bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Mijoz bankdan aktivni sotib olish uchun vada (Wa'ad) berishi mumkin. Bu vada mijozning majburiyatini
+            ta'minlash uchun majburiy hisoblanadi.
+          </p>
+          <p class="px-5">
+            • Ko'pincha Murobaha shartnomalarida xaridorga belgilangan muddat davomida kelishilgan narxni qismlarga
+            bo'lib to'lashga ruxsat beriladi. To'lov jadvali va miqdorlari aniq belgilanishi va kelishilishi kerak.
+          </p>
+          <p class="px-5">
+            • Sotuvchi kechiktirilgan to'lovlar uchun qo'shimcha to'lovlar yoki foizlarni undira olmaydi. Kechiktirilgan
+            to'lovlar uchun har qanday jarimalar shariat tamoyillariga mos bo'lishi va adolatli va asosli bo'lishi
+            kerak.
+          </p>
+          <p class="px-5">
+            • Bank mijozdan aktivni sotib olish majburiyatini ta'minlash uchun xavfsizlik garovi (Hamish Jiddiyah)
+            so'rashi mumkin. Ushbu garov odatda qaytariladigan yoki bitim amalga oshirilsa, sotib olish narxiga
+            qo'llanilishi mumkin.
+          </p>
+          <p class="px-5">
+            • Garov miqdori va shartlari adolatli va aniq belgilangan bo'lishi kerak, shaffoflik va o'zaro kelishuvni
+            ta'minlash uchun.
+          </p>
+          <p class="px-5">
+            • Foyda marjasi adolatli va bozor sharoitlari va sotuvchining qabul qilgan xavfiga muvofiq bo'lishi kerak.
+            Ekspluatatsion narx belgilash amaliyoti ruxsat etilmaydi.
+          </p>
+          <p class="px-5">
+            • Taqdim etilgan barcha ma'lumotlar to'g'ri va haqqoniy bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Murobaha shartnomasidan kelib chiqqan har qanday nizolar o'zaro kelishuv yoki shariatga muvofiq arbitraj
+            orqali hal qilinishi kerak. Shartnoma nizolarni hal qilish jarayonini belgilashi kerak.
+          </p>
         </div>
-        <div
-          id="videoContainer"
-          class="wow fadeInUp video-lists"
-          data-wow-delay="0.1s"></div>
-      </div>
-
-      <!-- Footer Start -->
-      <div
-        class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-              <h3 class="text-white mb-4">Aloqaga chiqing</h3>
-              <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>Tashkent city,
-                Uzbekistan
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-phone-alt me-3"></i>+998 99 051 18 81
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>info@al-muamalat.uz
-              </p>
-              <div class="d-flex pt-2">
-                <a
-                  class="btn btn-outline-light btn-social"
-                  target="_blank"
-                  href="https://www.instagram.com/al_muamalat?igsh=MW0zZXVlaXo4YXFqYg=="
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <h3 class="text-white mb-4">Tezkor havolalar</h3>
-              <a class="btn btn-link text-white-50" href="uz.html">Biz haqimizda</a>
-              <a class="btn btn-link text-white-50" href="contacts.html"
-                >Biz bilan bog'lanish</a
-              >
-              <a class="btn btn-link text-white-50" href="uz.html"
-                >Bizning xizmatlar</a
-              >
-            </div>
-          </div>
+        <div class="tab-pane card fade" id="pills-contact-1" role="tabpanel" aria-labelledby="pills-contact-tab-1">
+          <p class="p-3">
+            <b>Muzoraba</b> bu Islom moliyasi shartnoma bo'lib, unda bir tomon (Rabb-ul-Mol) kapital kiritadi, ikkinchi
+            tomon (Mudorib) esa ushbu kapitalni boshqaradi va investitsiya qiladi. Foyda oldindan kelishilgan
+            nisbatlarda bo'linadi, zarar esa faqat kapital egasiga tegishli, agar zarar Mudoribning ehtiyotsizligi yoki
+            noto'g'ri boshqaruvi natijasida kelib chiqqan bo'lsa, Mudorib javobgar bo’ladi.
+          </p>
+          <p class="px-5">
+            • Rabb-ul-Mol kapital (sarmoya) kiritadi, bu naqd pul yoki aktivlar shaklida bo'lishi mumkin.
+          </p>
+          <p class="px-5">
+            • Mudorib kapitalni boshqaradi va investitsiyalarni amalga oshiradi. U o'z bilim va tajribasini
+            investitsiyalarni boshqarishga qo'llaydi.
+          </p>
+          <p class="px-5">
+            • Foyda oldindan kelishilgan nisbatlarda bo'linadi, bu nisbatlar shartnomada aniq ko'rsatilgan bo'lishi
+            kerak.
+          </p>
+          <p class="px-5">
+            • Agar zarar bo'lsa, bu faqat Rabb-ul-Molga tegishli bo'ladi, agar zarar Mudaribning ehtiyotsizligi yoki
+            noto'g'ri boshqaruvi natijasida kelib chiqmagan bo'lsa.
+          </p>
+          <p class="px-5">
+            • Mudoraba shartnomasida garov talab qilinishi mumkin, lekin bu faqat Mudoribning noto'g'ri boshqaruvi yoki
+            ehtiyotsizligi natijasida kelib chiqishi mumkin bo'lgan yo'qotishlarni qoplash uchun bo'lishi kerak. Bu
+            garov kapitalni himoya qilish maqsadida qo'yiladi, lekin u asosiy biznes risklarini kafolatlamaydi.
+          </p>
+          <p class="px-5">
+            • <b>Cheklangan Muzoraba (Restricted Mudarabah):</b> Rabb-ul-Mol Mudoribga investitsiyalarni faqat aniq bir
+            loyihalar yoki sohalarga kiritishni talab qilishi mumkin.
+          </p>
+          <p class="px-5">
+            • <b>Cheklanmagan Muzoraba (Unrestricted Mudarabah):</b> Mudorib kapitalni o'z xohishiga ko'ra har qanday
+            Shariatga muvofiq investitsiyalarga kiritishi mumkin.
+          </p>
         </div>
-        <div class="container">
-          <div class="copyright">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy;
-                <a class="border-bottom" href="https://t.me/Xojimuhammedov"
-                  >Al-Muamalat</a
-                >, Barcha huquqlar himoyalangan
-                <a href="https://t.me/Xojimuhammedov">Developer/a>
-              </div>
-            </div>
-          </div>
+        <div class="tab-pane card fade" id="pills-contact-2" role="tabpanel" aria-labelledby="pills-contact-tab-2">
+          <p class="p-3">
+            <b>Salam</b> - bu Islom moliyasi shartnomasi bo'lib, unda xaridor to'lovni oldindan to'laydi va sotuvchi
+            kelajakda mahsulotlarni yetkazib beradi. Bu turdagi shartnoma ko'pincha qishloq xo'jaligi mahsulotlari va
+            boshqa tovarlar uchun qo'llaniladi.
+          </p>
+          <p class="px-5">
+            • Tovarning to'liq narxi shartnoma tuzilgan vaqtda to'lanishi kerak. Bu oldindan to'lov Salamni boshqa
+            shartnomalardan ajratib turadi.
+          </p>
+          <p class="px-5">
+            • Yetkazib beriladigan tovarlar sifat, miqdor va xususiyatlari bo'yicha aniq ta'riflanishi kerak.
+          </p>
+          <p class="px-5">
+            • Yetkazib berish sanasi shartnomada belgilanishi va aniqlangan bo'lishi kerak. Bu ikkala tomon ham tovarlar
+            qachon yetkazib berilishini bilishini ta'minlaydi.
+          </p>
+          <p class="px-5">
+            • Tovarlar aniq va o'lchanadigan bo'lishi kerak. Noaniq narsa bo'lmasligi kerak. Tovarlar Shariatga muvofiq
+            bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Sotuvchi shartnoma tuzilgan vaqtda tovarlarga ega bo'lishi shart emas, lekin belgilangan sanada ularni
+            yetkazib berishni ta'minlashi kerak.
+          </p>
+          <p class="px-5">
+            • Ikkala tomon ham Salam shartnomasiga ixtiyoriy ravishda kirishishi kerak va barcha shartlar va holatlarni
+            tushunishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu oldindan to'lov va
+            kelajakdagi yetkazib berish talabini o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Tovarlar yetkazib berilgunga qadar sotuvchi javobgar bo'ladi. Agar tovarlar zarar ko'rsa yoki belgilangan
+            vaqtda yetkazib berilmasa, sotuvchi har qanday yo'qotish uchun javobgar bo'ladi.
+          </p>
+          <p class="px-5">
+            • Agar sotuvchi belgilangan tovarlarni yetkazib bermasa, xaridor oldindan to'lovni qaytarib olish yoki
+            yetkazib berishni talab qilish huquqiga ega.
+          </p>
+          <p class="px-5">
+            • Bitim shaffof bo'lishi va barcha shartlar aniq yozilgan bo'lishi uchun tegishli hujjatlar saqlanishi
+            kerak. Bu to'lov kvitansiyalari va tovarlarning batafsil ta'rifini o'z ichiga oladi.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-3" role="tabpanel" aria-labelledby="pills-contact-tab-3">
+          <p class="p-3">
+            <b>Istisna</b> - bu Islom moliyasi shartnomasi bo'lib, unda bir tomon (xaridor) ma'lum bir mol-mulkni ishlab
+            chiqarishni yoki qurishni buyuradi va boshqa tomon (sotuvchi yoki ishlab chiqaruvchi) uni kelishilgan
+            xususiyatlarga ko'ra ishlab chiqarishni o'z zimmasiga oladi. To'lov shartlari moslashuvchan bo'lib, to’lov
+            buyurtma to'liq yetkazib berilganda yoki vaqt o'tishi bilan bo'lib-bo'lib to'lanishi mumkin.
+          </p>
+          <p class="px-5">
+            • Istisna faqat ishlab chiqarish yoki qurilish talab qiladigan buyumlar uchun mo'ljallangan. Bu tayyor
+            mahsulotlar uchun qo'llanilmaydi.
+          </p>
+          <p class="px-5">
+            • Ishlab chiqariladigan tovarlarning spetsifikatsiyalari aniq belgilangan bo'lishi kerak, jumladan turi,
+            sifati, miqdori va boshqa tegishli xususiyatlari. Bu har qanday noaniqlikning (g’arar) oldini oladi.
+          </p>
+          <p class="px-5">
+            • Salamdan farqli o'laroq, Istisna shartnomasida to'lov buyurtma to'liq yetkazib berilganda, bo'lib-bo'lib
+            yoki boshqa kelishilgan jadval bo'yicha amalga oshirilishi mumkin. Bu moslashuvchanlik uni boshqa savdo
+            shartnomalaridan ajratib turadi.
+          </p>
+          <p class="px-5">
+            • Shartnoma tuzilgan vaqtda tovarlar mavjud bo'lishi shart emas. Sotuvchi yoki ishlab chiqaruvchi
+            shartnomaga ko'ra tovarlarni ishlab chiqarishi yoki qurishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma ishlab chiqaruvchi ishni boshlashidan oldin har ikki tomon tomonidan bekor qilinishi mumkin.
+            Ishlab chiqarish boshlanganidan keyin, odatda, bekor qilish faqat o'zaro rozilik bilan amalga oshiriladi.
+          </p>
+          <p class="px-5">
+            • Ikkala tomon ham Istisna shartnomasiga ixtiyoriy ravishda kirishishi kerak va barcha shartlar va
+            holatlarni tushunishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu ishlab chiqarish va
+            qurilish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Ishlab chiqaruvchi tovarlar kelishilgan spetsifikatsiyalarga muvofiq yetkazib berilgunga qadar javobgar
+            bo'ladi. Agar tovarlar nuqsonli yoki kelishilgan spetsifikatsiyalarga mos kelmasa, xaridor ularni rad etish
+            huquqiga ega.
+          </p>
+          <p class="px-5">
+            • Agar ishlab chiqaruvchi belgilangan tovarlarni yetkazib bermasa, xaridor maxsus ijroni talab qilish,
+            kompensatsiya olish yoki shartnomani bekor qilish kabi chora-tadbirlarni amalga oshirishi mumkin.
+          </p>
+          <p class="px-5">
+            • Bitim shaffof bo'lishi va barcha shartlar aniq yozilgan bo'lishi uchun tegishli hujjatlar saqlanishi
+            kerak. Bu shartnoma, tovarlarning spetsifikatsiyalari, to'lov jadvali va boshqa tegishli tafsilotlarni o'z
+            ichiga oladi.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-4" role="tabpanel" aria-labelledby="pills-contact-tab-4">
+          <p class="p-3">
+            <b>Parallel Salam</b> — bu Islom moliyasida ikkita alohida Salam shartnomasi bir vaqtning o'zida tuziladigan
+            shartnomadir. Birinchi shartnomada sotuvchi xaridorga kelajakda yetkazib beriladigan tovarlarni oldindan
+            to'langan narxda yetkazib berishga rozi bo'ladi.
+            Ikkinchi shartnomada birinchi shartnoma sotuvchisi yangi Salam shartnomasida xaridor bo'lib, kelajakda
+            boshqa tomondan (ikkinchi sotuvchi) tovarlarni oldindan to'langan narxda yetkazib berishga rozi bo'ladi.
+            Ushbu shartnomalar bir-biridan mustaqil bo'lib, ammo tranzaktsiyalar ketma-ketligi bilan bog'liq.
+          </p>
+          <p class="px-5">• Har bir Salam shartnomasi mustaqil bo'lishi va bir-biriga bog'liq bo'lmasligi kerak. Bir
+            shartnomaning majburiyatlari boshqa shartnomaga bog'liq bo'lmasligi kerak.</p>
+          <p class="px-5">
+            • Ikkala Salam shartnomasida ham narx shartnoma tuzilgan paytda to'liq to'lanishi kerak. Ushbu oldindan
+            to'lov Shariat qoidalariga muvofiq bo'lishi zarur.
+          </p>
+          <p class="px-5">
+            • Ikkala shartnomadagi tovarlar sifat, miqdor va xususiyatlar bo'yicha aniq ta'riflangan bo'lishi kerak. Bu
+            tovarlarga nisbatan har qanday noaniqlikning (g’arar) oldini oladi.
+          </p>
+          <p class="px-5">
+            • Yetkazib berish sanalari ikkala shartnomada ham belgilanishi va aniqlangan bo'lishi kerak. Bu ikkala tomon
+            ham tovarlar qachon yetkazib berilishini bilishini ta'minlaydi.
+          </p>
+          <p class="px-5">
+            • Ikkala shartnomadagi tovarlar Shariatga muvofiq bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Birinchi Salam shartnomasidagi sotuvchi shartnoma tuzilgan paytda tovarlarga ega bo'lishi shart emas,
+            lekin belgilangan sanada ularni yetkazib berishi kerak. Xuddi shunday, Parallel Salam shartnomasidagi
+            ikkinchi sotuvchi ham shartnoma tuzilgan paytda tovarlarga ega bo'lishi shart emas, lekin belgilangan sanada
+            ularni yetkazib berishi kerak.
+          </p>
+          <p class="px-5">
+            • Har ikkala Salam shartnomasida ham tomonlar ixtiyoriy ravishda shartnomaga kirishi va barcha shartlar va
+            holatlarni tushunishi kerak.
+          </p>
+          <p class="px-5">
+            • Ikkala shartnoma ham amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu oldindan to'lov
+            va kelajakdagi yetkazib berish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Har bir shartnomadagi sotuvchi tovarlarni kelishilgan spetsifikatsiyalarga muvofiq yetkazib bergunga qadar
+            javobgar bo'ladi. Agar tovarlar zarar ko'rsa yoki belgilangan vaqtda yetkazib berilmasa, sotuvchi har qanday
+            yo'qotish uchun javobgar bo'ladi.
+          </p>
+          <p class="px-5">
+            • Agar har qanday sotuvchi belgilangan tovarlarni yetkazib bermasa, shu shartnomadagi xaridor oldindan
+            to'lovni qaytarib olish yoki yetkazib berishni talab qilish huquqiga ega.
+          </p>
+          <p class="px-5">
+            • Har ikkala Salam shartnomasi uchun tegishli hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof
+            bo'lib, barcha shartlar aniq yozilgan bo'lishi kerak. Bu to'lov kvitansiyalari va tovarlarning batafsil
+            ta'rifini o'z ichiga oladi.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-5" role="tabpanel" aria-labelledby="pills-contact-tab-5">
+          <p class="p-3">
+            <b>Parallel Istisna</b> — bu Islom moliyasida ikkita alohida Istisna shartnomasi bir vaqtning o'zida
+            tuziladigan shartnomadir. Birinchi shartnomada xaridor ishlab chiqaruvchi yoki pudratchidan ma'lum bir
+            mahsulot yoki loyihani ishlab chiqarishni yoki qurishni buyuradi. Ikkinchi shartnomada ishlab chiqaruvchi
+            yoki pudratchi (birinchi shartnomada sotuvchi bo'lgan) subpudratchi yoki boshqa tomon bilan shunga o'xshash
+            mahsulot yoki loyihani ishlab chiqarishni yoki qurishni buyuradi. Ushbu shartnomalar bir-biridan mustaqil
+            bo'lib, tranzaktsiyalar ketma-ketligi bilan bog'liq.
+          </p>
+          <p class="px-5">
+            • Har bir Istisna shartnomasi mustaqil bo'lishi va bir-biriga bog'liq bo'lmasligi kerak. Bir shartnomaning
+            majburiyatlari boshqa shartnomaga bog'liq bo'lmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Ikkala shartnomadagi mahsulot yoki loyihalar sifat, miqdor va xususiyatlar bo'yicha aniq ta'riflangan
+            bo'lishi kerak. Bu mahsulot yoki loyihalarga nisbatan har qanday noaniqlikning (g’arar) oldini oladi.
+          </p>
+          <p class="px-5">
+            • Ikkala Istisna shartnomasida ham to'lov to'liq yetkazib berilganda, bo'lib-bo'lib yoki boshqa kelishilgan
+            jadval bo'yicha amalga oshirilishi mumkin. Bu moslashuvchanlik uni boshqa savdo shartnomalaridan ajratib
+            turadi.
+          </p>
+          <p class="px-5">
+            • Mahsulot yoki loyihalar shartnoma tuzilgan paytda mavjud bo'lishi shart emas. Sotuvchi yoki pudratchi
+            shartnomaga ko'ra mahsulot yoki loyihani ishlab chiqarishi yoki qurishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma ishlab chiqaruvchi yoki pudratchi ishni boshlashidan oldin har ikki tomon tomonidan bekor
+            qilinishi mumkin. Ishlab chiqarish boshlanganidan keyin, odatda, bekor qilish faqat o'zaro rozilik bilan
+            amalga oshiriladi.
+          </p>
+          <p class="px-5">
+            • Har ikkala Istisna shartnomasida ham tomonlar ixtiyoriy ravishda shartnomaga kirishi va barcha shartlar va
+            holatlarni tushunishi kerak.
+          </p>
+          <p class="px-5">
+            • Ikkala shartnoma ham amalga oshirilayotgan yurisdiktsiya talablariga mos kelishi kerak. Bu ishlab
+            chiqarish va qurilish shartnomalari uchun har qanday tartibga rioya qilishni o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Har bir shartnomadagi ishlab chiqaruvchi yoki pudratchi mahsulot yoki loyihalar kelishilgan
+            spetsifikatsiyalarga muvofiq yetkazib bergunga qadar javobgar bo'ladi. Agar mahsulot yoki loyihalar nuqsonli
+            yoki kelishilgan spetsifikatsiyalarga mos kelmasa, xaridor ularni rad etish huquqiga ega.
+          </p>
+          <p class="px-5">
+            • Agar har qanday ishlab chiqaruvchi yoki pudratchi belgilangan mahsulot yoki loyihalarni yetkazib bermasa,
+            shu shartnomadagi xaridor maxsus ijroni talab qilish, kompensatsiya olish yoki shartnomani bekor qilish kabi
+            chora-tadbirlarni amalga oshirishi mumkin.
+          </p>
+          <p class="px-5">
+            • Har ikkala Istisna shartnomasi uchun tegishli hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof
+            bo'lib, barcha shartlar aniq yozilgan bo'lishi kerak. Bu shartnoma, mahsulot yoki loyihalarning
+            spetsifikatsiyalari, to'lov jadvali va boshqa tegishli tafsilotlarni o'z ichiga oladi.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-6" role="tabpanel" aria-labelledby="pills-contact-tab-6">
+          <p class="p-3">
+            <b>Mushoraka Mutanaqisa</b> (kamayib boruvchi sherikchilik) - Unda bir tomon (odatda moliyaviy institute,
+            bank) o'z egaligidagi ulushini vaqt o'tishi bilan boshqa tomonga (shaxs yoki biznes) asta-sekin o'tkazadi.
+            Bu odatda davriy to'lovlar orqali amalga oshiriladi, natijada ikkinchi tomon mulkning yagona egasiga
+            aylanadi. Usbu sherikchilik shartnomasi uylar, transport vositalari yoki biznes uskunalarini sotib olishni
+            moliyalashtirish uchun tez-tez qo'llaniladi.
+          </p>
+          <p class="px-5">
+            • Ikkala tomon mulk sotib olish uchun kapital kiritadi. Mulk ulushlari kapital kiritishiga qarab
+            taqsimlanadi.
+          </p>
+          <p class="px-5">
+            • Moliyaviy institutning mulkdagi ulushi davriy to'lovlar orqali asta-sekin boshqa tomonga (mijozga)
+            o'tkaziladi. Bu to'lovlar aktivdan foydalanish uchun ijara haqini va moliyaviy institut ulushining sotib
+            olish narxini o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Aktivdan foydalanayotgan tomon moliyaviy institutga ulushini foydalanish uchun ijara to'laydi. Ularning
+            ulushni sotib olgan sari ijara miqdori kamayadi.
+          </p>
+          <p class="px-5">
+            • Har ikki tomon sheriklik va ijara kelishuvining shartlari va holatlarini aniq belgilab, ularga rozi
+            bo'lishi kerak. Bu dastlabki kapital kiritishlar, mulkni o'tkazish usuli va jadvali, ijara miqdori va boshqa
+            tegishli tafsilotlarni o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Kelishuv ribo (foiz) taqiqlanishiga rioya qilishi kerak. Moliyaviy institutning foydasi ulushining ijarasi
+            orqali olinadi, foiz orqali emas.
+          </p>
+          <p class="px-5">
+            • Har ikki tomon Mushoraka Mutanaqisa shartnomasiga ixtiyoriy ravishda kirishi va barcha shartlar va
+            holatlarni tushunishi kerak. Shartnoma Islom qonunlari va yurisdiktsiya talablariga mos kelishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma huquqiy jihatdan majburiy bo'lishi kerak, bu orqali har ikki tomon o'z majburiyatlariga rioya
+            qilishini ta'minlaydi. Bu muntazam ijara va mulkni o'tkazish uchun to'lovlarni o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Har ikki tomon mulkdagi ulushlariga qarab mulkka bog'liq xatarlarni bo'lishadi.
+            Har qanday yo'qotish yoki zararni mulk ulushlari asosida proporsional ravishda bo'linadi.
+          </p>
+          <p class="px-5">
+            • Kelishuvda erta bekor qilish shartlari bo'lishi mumkin. Agar tomon kelishuvni erta bekor qilishga qaror
+            qilsa, qolgan mulk ulushlarini hisoblash shartlari aniq belgilanishi kerak.
+          </p>
+          <p class="px-5">
+            • Shartnoma, ijara kelishuvi, to'lov kvitansiyalari va mulkni o'tkazish yozuvlarini o'z ichiga olgan to'g'ri
+            hujjatlar saqlanishi kerak, shunda tranzaktsiya shaffof va aniq bo'ladi.
+          </p>
+          <p class="px-3">
+            <b>Misol</b>
+          </p>
+          <p class="px-3">Mijoz 100,000 AQSh dollariga uy sotib olmoqchi. Mijoz va moliyaviy institut (masalan, bank)
+            Mushoraka Mutanaqisa shartnomasiga kirishib, bank 80% ($80,000) va smijoz 20% ($20,000) kapital kiritadi.
+            Shaxs moliyaviy institutning uydagi ulushidan foydalanish uchun ijara to'laydi va moliyaviy institut
+            ulushini asta-sekin sotib olish uchun davriy to'lovlar qiladi. Vaqt o'tishi bilan shaxs ushbu to'lovlarni
+            amalga oshirib, uydagi to'liq ulushni egallaydi.</p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-7" role="tabpanel" aria-labelledby="pills-contact-tab-7">
+          <p class="p-3">
+            <b>Vakala</b> - bu Islom moliyasida shartnoma bo'lib, unda bir tomon (mijoz yoki "muwakkil") boshqa tomonni
+            (vakil yoki "wakil") Shariatga muvofiq ruxsat etilgan masalalarda o'z nomidan ish yuritish uchun tayinlaydi.
+            Vakil mijoz uchun muayyan vazifalar yoki funksiyalarni bajaradi, mijoz esa zarur mablag'lar yoki resurslarni
+            ta'minlaydi. Vakil xizmatlari uchun haq olishi mumkin, bu belgilangan to'lov yoki tranzaktsiya qiymatining
+            foizi bo'lishi mumkin.
+          </p>
+          <p class="px-5">
+            • <b>Umumiy vakala (Wakalah 'Aammah):</b> Vakil mijoz nomidan turli tranzaktsiyalar yoki vazifalarni
+            cheklanmagan vakolat bilan bajarishga haqli.
+          </p>
+          <p class="px-5">
+            • <b>Maxsus vakala (Wakalah Khassa):</b> Vakil mijoz nomidan ma'lum vazifalarni yoki maxsus
+            tranzaktsiyalarni bajarishga vakolat oladi, aniq belgilangan chegaralar va cheklovlar bilan.
+          </p>
+          <p class="px-5">
+            • Ham mijoz, ham vakil Wakalah kelishuviga ixtiyoriy ravishda kirishishi kerak va har ikkisi shartlarni aniq
+            tushunishi kerak.
+          </p>
+          <p class="px-5">
+            • Vakilga berilgan vazifalar yoki tranzaktsiyalar Shariat qonunlariga muvofiq bo'lishi kerak. Vakildan harom
+            (taqiqlangan) faoliyatlarni amalga oshirish talab qilinmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Vakilning majburiyatlari, vazifalari va vakolat doirasi shartnomada aniq belgilanishi kerak. Bu vakil
+            xizmatlari uchun belgilangan har qanday kompensatsiyani ham o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Vakil halollik va maksimal harakat bilan mijoz manfaatlarini hisobga olib ish tutishi kerak. U manfaatlar
+            to'qnashuvlaridan qochishi va mijozga har qanday tegishli ma'lumotlarni oshkor qilishi kerak.
+          </p>
+          <p class="px-5">
+            • Vakil o'z harakatlari uchun hisob berishi kerak va mijozga aniq hisobotlar va yozuvlarni taqdim etishi
+            kerak. U mijozning mablag'lari yoki resurslarini e'tibor va ehtiyotkorlik bilan boshqarishi kerak.
+          </p>
+          <p class="px-5">
+            • Wakalah kelishuvi har ikki tomon tomonidan har qanday vaqtda bekor qilinishi mumkin, ogohlantirilgan holda
+            va har qanday bajarilmagan majburiyatlar bajarilib.
+          </p>
+          <p class="px-5">
+            • Shartnoma huquqiy jihatdan majburiy bo'lishi kerak, bu orqali har ikki tomon o'z majburiyatlariga rioya
+            qilishini ta'minlaydi. Bu vakilning o'z vakolat doirasida ish tutish va mijozning zarur mablag'lar yoki
+            resurslarni taqdim etish majburiyatini o'z ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Mijoz vakilning Wakalah kelishuvi doirasida amalga oshirgan harakatlari uchun javobgar bo'ladi. Biroq,
+            vakil o'z vakolat doirasidan tashqarida amalga oshirgan harakatlari yoki e'tiborsizlik yoki noto'g'ri
+            harakatlar uchun shaxsan javobgar bo'ladi.
+          </p>
+          <p class="px-5">
+            • Shartnoma, vakil tomonidan bajarilgan tranzaktsiyalar yoki vazifalar yozuvlari va vakilga to'langan har
+            qanday kompensatsiyani o'z ichiga olgan to'g'ri hujjatlar saqlanishi kerak.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-8" role="tabpanel" aria-labelledby="pills-contact-tab-8">
+          <p class="p-3">
+            <b>Ujra</b> - bu islomiy moliyada xizmatlar ko'rsatilganligi yoki mol-mulkdan foydalanish uchun to'lanadigan
+            to'lov yoki komissiya.
+          </p>
+          <p class="px-5">
+            • Ujra to'lanadigan xizmat Islom qonunga ko'ra ruxsat etilgan bo'lishi kerak. Spirtli ichimliklar, qimor
+            yoki foizga asoslangan tranzaksiyalar kabi harom (taqiqlangan) faoliyatlar bilan bog'liq bo'lgan hech qanday
+            xizmat uchun Ujra olinishi mumkin emas.
+          </p>
+          <p class="px-5">
+            • Xizmat ko'rsatuvchi (Ajir) va mijoz (Mustajir) o'rtasida xizmatning mohiyati va Ujraning miqdori bo'yicha
+            aniq va o'zaro kelishuv bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Ujraning miqdori va xizmat ko'lamini o'z ichiga olgan barcha shartlar va holatlar barcha ishtirokchilarga
+            oshkora bo'lishi kerak, shunda hech qanday aldov yoki noaniqlik (g'arar) bo'lmaydi.
+          </p>
+          <p class="px-5">
+            • Ujra uchun to'lov shartlari aniq belgilangan bo'lishi kerak. Bu birdaniga, bo'lib-bo'lib yoki boshqa
+            o'zaro kelishilgan usulda bo'lishi mumkin, faqat bu aniq bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Ujraning miqdori ko'rsatilgan xizmatlar yoki mol-mulkdan foydalanish qiymatini aks ettiruvchi adolatli va
+            halol bo'lishi kerak. Bu ekspluatatsion yoki haddan tashqari bo'lmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Ujra odatda xizmat bajarilgandan keyin yoki shartnomada kelishilgan shartlarga binoan to'lanadi. Agar
+            xizmat kelishilganidek ko'rsatilmasa, xizmat ko'rsatuvchi to'liq Ujrani olishga haqli bo'lmasligi mumkin.
+          </p>
+          <p class="px-5">
+            Vakala (Wakalah) shartnomasida agent (Wakil) asosiy tomon (mijoz) nomidan xizmat ko'rsatganligi uchun ujra
+            olishi mumkin.
+          </p>
+          <p class="px-5">
+            Ijara shartnomasiga ko'ra, ijaraga beruvchi ijarachiga mulk yoki asbob-uskunalar kabi aktivlardan
+            foydalanishga ruxsat bergani uchun Ujra oladi.
+          </p>
+          <p class="px-5">
+            Islom banklari hisoblarga xizmat ko'rsatish, pul o'tkazmalari yoki maslahat xizmatlari kabi turli xizmatlar
+            uchun ujra olishlari mumkin.
+          </p>
+        </div>
+        <div class="tab-pane card fade" id="pills-contact-9" role="tabpanel" aria-labelledby="pills-contact-tab-9">
+          <p class="p-3">
+            <b>Shariatga muvofiqlik</b> har qanday moliyaviy faoliyat, mahsulot yoki xizmatning Islom qonunlariga
+            (Shariatga) muvofiqligini anglatadi. Shariatga muvofiqlik tranzaktsiyalar va operatsiyalarning Islom huquqiy
+            manbalaridan kelib chiqqan axloqiy va huquqiy ko'rsatmalarga mosligini ta'minlaydi. Shariatga muvofiqlik
+            foiz (ribo), qimor (maysir), ortiqcha noaniqlik (g’arar) va taqiqlangan sohalarga, masalan, alkogol,
+            cho'chqa go'shti va axloqsizlikni o'z ichiga olgan ko'ngilochar sohalarga sarmoya kiritishni taqiqlaydi.
+          </p>
+          <p class="px-3">
+            <b>Shariatga muvofiqlikni tekshirish</b> sarmoyalar, kompaniyalar yoki moliyaviy mahsulotlarni Shariat
+            qoidalariga muvofiqligini ta'minlash uchun baholash va filtrlash jarayonidir. Ushbu tekshirish jarayoni
+            Shariat ko'rsatmalariga asoslangan ruxsat etilganlikni baholash uchun sifat va miqdoriy mezonlarni o'z
+            ichiga oladi.
+          </p>
+          <p class="px-5">
+            • Tranzaktsiyalar har qanday foiz shaklini o'z ichiga olmasligi kerak. Daromad ruxsat etilgan (halol) biznes
+            faoliyatidan kelishi kerak.
+          </p>
+          <p class="px-5">
+            • Tranzaktsiyalar ortiqcha noaniqlik va noaniqlikdan xoli bo'lishi kerak. Shartnomalar aniq va shaffof
+            bo'lib, barcha shartlar va holatlar aniq belgilanishi kerak.
+          </p>
+          <p class="px-5">
+            • Qimor yoki spekulyativ harakatlarni o'z ichiga olgan faoliyatlar ruxsat etilmaydi. Sarmoyalar haqiqiy
+            iqtisodiy faoliyatlarga asoslangan bo'lishi kerak.
+          </p>
+          <p class="px-5">
+            • Sarmoyalar harom (taqiqlangan) faoliyatlarga, masalan, alkogol, cho'chqa go'shti, qimor va axloqsizlikni
+            o'z ichiga olgan ko'ngilochar sohalarda ishtirok etuvchi kompaniyalarga qilinmasligi kerak.
+          </p>
+
+          <h6 class="px-3">Shariatga moslikni tekshirish mezonlari</h6>
+          <p class="px-5">
+            <b>1. Sifat mezonlari:</b>
+          </p>
+          <p class="px-3">Biznes faoliyatining tabiati baholanadi. Alkogol, cho'chqa go'shti, qimor, kattalar uchun
+            ko'ngilochar xizmatlar va foizga asoslangan moliyaviy xizmatlar bilan shug'ullanuvchi kompaniyalar
+            ro’yxatdan chiqariladi.</p>
+          <p class="px-5">
+            <b>2. Miqdoriy mezonlari:</b>
+          </p>
+          <p class="px-3">Kompaniyalarning moliyaviy ko'rsatkichlari Shariatga mos kelishini ta'minlash uchun
+            baholanadi. E’tibor qaratiladigan va ko’p ishlatiladigan moliyaviy ko'rsatkichlar quyidagilardan iborat:</p>
+          <p class="px-5">
+            • Qarzdorlik va Bozor Kapitalizatsiyasi Nisbati: Kompaniyaning jami qarzlari uning bozor
+            kapitalizatsiyasining 33% dan oshmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Nomaqbul Daromad Nisbati: Nomaqbul faoliyatlardan olingan daromad jami daromadning 5% dan oshmasligi
+            kerak.
+          </p>
+          <p class="px-5">
+            • Likvidlik Nisbati: Naqd pul va foiz keltiruvchi har qanday qimmatli qog’ozlarning jami aktivlarga nisbati
+            33% dan oshmasligi kerak.
+          </p>
+          <p class="px-5">
+            • Foiz Keltiruvchi Qarzdorlikning Aktivlarga Nisbati: Foiz keltiruvchi qarzdorlik jami aktivlarning 33% dan
+            oshmasligi kerak.
+          </p>
+          <p class="px-5">Kompaniyaning asosiy biznes faoliyati shariatga muvofiq bo'lishi kerak.</p>
+          <p class="px-5">Qarzning bozor qiymatiga nisbatan darajasi uchdan biridan kam bo'lishi kerak.</p>
+          <p class="px-5">Noto'g'ri faoliyatdan olingan daromadning foizini aniqlash va daromadni tozalash uchun
+            tegishli miqdorni xayriyaga berish. </p>
+          <p class="px-5">
+            - Shariatga mos mahsulotlarni taklif qiladigan muassasalar Shariat kengashiga ega bo'lishi kerak, bu kengash
+            malakali Islom olimlaridan iborat bo'lib, Shariat qoidalariga rioya qilinishini nazorat qiladi va
+            ta'minlaydi.
+          </p>
+          <p class="px-5">
+            - Shariatga rioya qilishni ta'minlash uchun muntazam Shariat auditlari o'tkazilishi kerak. Ushbu auditlar
+            moliyaviy hisobotlar, tranzaktsiyalar va biznes amaliyotlarini ko'rib chiqadi.
+          </p>
         </div>
       </div>
-      <!-- Footer End -->
-
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        ><i class="bi bi-arrow-up"></i
-      ></a>
     </div>
 
-    <script>
-      // Telegram Bot Configuration
-      let bot = {
-        TOKEN: "7124566656:AAFYAZxPTZZPtPFUiPJekWVc1Kp35t1sjHY",
-        chatID: "-1002196684816",
-      };
+    <div class="container mt-4">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h1 class="mb-3">Bizning Videolar!</h1>
+      </div>
+      <div id="videoContainer" class="wow fadeInUp video-lists" data-wow-delay="0.1s"></div>
+    </div>
 
-      function sendZakaz(e) {
-        e.preventDefault();
+    <div class="container mt-4">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+        <h1 class="mb-3">Bizning Maqolalar!</h1>
+      </div>
+      <div class="owl-carousel testimonial-carousels wow fadeInUp" data-wow-delay="0.1s">
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/8/lXlDe4nm25Ogr_DPnaFuDVyVXYcJClTM.jpg" alt="">
+          <h5 class="my-2">Vaqf – rivojlanish uchun iqtisodiy kuch. O‘zbekiston undan qanday foydalanyapti? </h5>
+          <a href="https://kun.uz/07488561" target="_blank">Batafsil o'qish</a>
+         </div>
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/9/ZPs7sFTXrdIKgaGUbkmqvMc73pltsejo.jpg" alt="">
+          <h5 class="my-2">O‘zbekiston Islom moliyasi bo‘yicha mintaqaviy habga aylanishi kerak</h5>
+          <a href="https://kun.uz/21925231" target="_blank">Batafsil o'qish</a>
+         </div>
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/9/SagBTMCP2tgAJB3HIXdbtL9BkxJ9LQhE.jpg" alt="">
+          <h5 class="my-2">Kambag‘allikka qarshi islom moliyasi</h5>
+          <a href="https://kun.uz/79966396" target="_blank">Batafsil o'qish</a>
+         </div>
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/8/NNOsQNu9x-bAebGq7m7_DkFH314Ka6j-.jpg" alt="">
+          <h5 class="my-2">Islom moliyasida sukuk: Jahon tajribasi, afzalliklar va imkoniyatlar
+          </h5>
+          <a href="https://kun.uz/58004341" target="_blank">Batafsil o'qish</a>
+         </div>
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/10/g0n6CUzh3GGOmgcJxTyKwhYG7O-vsG-x.jpg" alt="">
+          <h5 class="my-2">Musulmonlar uchun do‘stona turizm: yetakchi mamlakatlar va O‘zbekiston uchun imkoniyatlar
 
-        // Get form data (assuming you have form elements with id "name" and "number")
-        var nameValue = document.getElementById("name").value;
+          </h5>
+          <a href="https://kun.uz/78090115" target="_blank">Batafsil o'qish</a>
+         </div>
+         <div>
+          <img class="article-img" src="https://storage.kun.uz/source/10/ZZTeykiJcEwfgH1Pf1e6auXiQBfcm93-.jpg" alt="">
+          <h5 class="my-2">Islom moliyasi vositalari – tashqi qarz yukini yumshatish yo‘li
+          </h5>
+          <a href="https://kun.uz/kr/29339373" target="_blank">Batafsil o'qish</a>
+         </div>
+      </div>
+    </div>
 
-        var numberValue = document.getElementById("number").value;
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-white mb-4">Aloqaga chiqing</h3>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Tashkent city,
+              Uzbekistan
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+998 99 051 18 81
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@al-muamalat.uz
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" target="_blank"
+                href="https://www.instagram.com/al_muamalat?igsh=MW0zZXVlaXo4YXFqYg=="><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-white mb-4">Tezkor havolalar</h3>
+            <a class="btn btn-link text-white-50" href="uz.html">Biz haqimizda</a>
+            <a class="btn btn-link text-white-50" href="contacts.html">Biz bilan bog'lanish</a>
+            <a class="btn btn-link text-white-50" href="uz.html">Bizning xizmatlar</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy;
+              <a class="border-bottom" href="https://t.me/Xojimuhammedov">Al-Muamalat</a>, Barcha huquqlar himoyalangan
+              <a href="https://t.me/Xojimuhammedov">Developer/a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
 
-        var category = document.getElementById("email").value;
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  </div>
 
-        var visaI = document.getElementById("message").value;
+  <script>
+    // Telegram Bot Configuration
+    let bot = {
+      TOKEN: "7124566656:AAFYAZxPTZZPtPFUiPJekWVc1Kp35t1sjHY",
+      chatID: "-1002196684816",
+    };
 
-        // Construct the message
-        var message = `
+    function sendZakaz(e) {
+      e.preventDefault();
+
+      // Get form data (assuming you have form elements with id "name" and "number")
+      var nameValue = document.getElementById("name").value;
+
+      var numberValue = document.getElementById("number").value;
+
+      var category = document.getElementById("email").value;
+
+      var visaI = document.getElementById("message").value;
+
+      // Construct the message
+      var message = `
           Assalomu alaykum sizga yangi habar yuborildi!%0A
           %0AIsmi 👤: ${nameValue};
           %0AElektron pochtasi : ${category};
@@ -867,68 +913,67 @@
            %0AXabari : ${visaI};
           `;
 
-        fetch(
-          `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}`,
-          {
+      fetch(
+          `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}`, {
             method: "GET",
           }
         )
-          .then((response) => {
-            if (response.ok) {
-              alert("Sizning so'rovingiz muvaffaqiyatli yuborildi");
-            } else {
-              alert("Qandaydir xatolik boldi");
-            }
-          })
-          .catch((error) => {
-            console.error(error);
-          });
+        .then((response) => {
+          if (response.ok) {
+            alert("Sizning so'rovingiz muvaffaqiyatli yuborildi");
+          } else {
+            alert("Qandaydir xatolik boldi");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
 
-        // Clear form fields
-        document.getElementById("name").value = "";
-        document.getElementById("number").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-      }
-    </script>
+      // Clear form fields
+      document.getElementById("name").value = "";
+      document.getElementById("number").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    }
+  </script>
 
-    <script>
-      // script.js
-      document.addEventListener("DOMContentLoaded", fetchBlogData);
+  <script>
+    // script.js
+    document.addEventListener("DOMContentLoaded", fetchBlogData);
 
-      function fetchBlogData() {
-        fetch("https://v1.centurysilkroadtravel.uz/api/blogs")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            const dataContainer = document.getElementById("videoContainer");
-            dataContainer.innerHTML = "";
-            data?.data?.map((item) => {
-              const div = document.createElement("div");
-              div.classList.add("video-list");
-              div.innerHTML = `
+    function fetchBlogData() {
+      fetch("https://v1.centurysilkroadtravel.uz/api/blogs")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          const dataContainer = document.getElementById("videoContainer");
+          dataContainer.innerHTML = "";
+          data ? .data ? .map((item) => {
+            const div = document.createElement("div");
+            div.classList.add("video-list");
+            div.innerHTML = `
               <div>
                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/bmmWlOKSnW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h2 class="blog-name fs-5">Nima uchun Islom moliyasi zarur?</h2>
                 <a href="./img/Islom banki va uning xizmatlari.pptx" target="_blank" class="blog-name fs-5">Batafsil ma'lumot</a>
               </div>
             `;
-              dataContainer.appendChild(div);
-            });
-          })
-          .catch((error) => console.error("Error fetching data:", error));
-      }
-    </script>
+            dataContainer.appendChild(div);
+          });
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+    }
+  </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

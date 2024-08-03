@@ -21,7 +21,6 @@
   flex-wrap: wrap;
 }
 
-
 .blog-list {
   height: 440px !important;
   background-color: #fff5f3 !important;
@@ -222,6 +221,10 @@ h6,
   top: auto;
   bottom: 0;
   background: url(../img/bg-header-bottom.png) center center repeat-x;
+}
+
+.article-img {
+  height:356px;
 }
 
 @media (max-width: 768px) {
@@ -541,7 +544,8 @@ h6,
 }
 
 @media (max-width: 500px) {
-  .blog-lists, .video-lists {
+  .blog-lists,
+  .video-lists {
     display: grid;
     grid-template-columns: repeat(1, minmax(250px, 400px));
     gap: 20px;
@@ -551,7 +555,7 @@ h6,
   .mission-list {
     padding: 10px !important;
   }
-  .nav-language{
+  .nav-language {
     margin-left: 0 !important;
   }
 }
