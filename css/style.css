@@ -259,13 +259,20 @@ h6,
   }
 }
 
-.header-carousel .owl-nav {
+.header-carousel .owl-nav .owl-next {
   position: absolute;
   top: 50%;
-  right: 8%;
+  right: 2%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
+}
+
+.header-carousel .owl-nav .owl-prev{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
 }
 
 .header-carousel .owl-nav .owl-prev,
